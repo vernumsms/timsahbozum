@@ -883,12 +883,21 @@ table.rate-table td.rate-value.pending { color: #a3711b; font-size: 0.95rem; }
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: 28px;
+  overflow: hidden;
   box-shadow: var(--shadow-sm);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
 }
+
+.blog-card .blog-card-thumb {
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-card .blog-card-body { padding: 24px 28px 28px; display: flex; flex-direction: column; flex-grow: 1; }
 
 .blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
 
@@ -923,6 +932,16 @@ table.rate-table td.rate-value.pending { color: #a3711b; font-size: 0.95rem; }
   font-size: 0.86rem;
   color: var(--color-text-muted);
   margin: 18px 0 0;
+}
+
+.article-banner {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 32px;
 }
 
 .article-body { max-width: 760px; }
