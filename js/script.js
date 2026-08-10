@@ -1,4 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Announcement bar dismiss
+  var announceBar = document.getElementById('announceBar');
+  if (announceBar) {
+    if (localStorage.getItem('tb_announce_dismissed') === '1') {
+      announceBar.style.display = 'none';
+    }
+    var announceClose = announceBar.querySelector('.announce-close');
+    if (announceClose) {
+      announceClose.addEventListener('click', function () {
+        announceBar.style.display = 'none';
+        localStorage.setItem('tb_announce_dismissed', '1');
+      });
+    }
+  }
+
   // Mobile nav toggle
   var navToggle = document.querySelector('.nav-toggle');
   var header = document.querySelector('.site-header');

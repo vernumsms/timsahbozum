@@ -146,6 +146,41 @@ p { color: var(--color-text-muted); }
 
 .btn svg { width: 20px; height: 20px; flex-shrink: 0; }
 
+/* ---------- Announcement Bar ---------- */
+
+.announce-bar {
+  background: linear-gradient(90deg, #082720, #0e3a2b);
+  color: #f4f2ec;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 44px 10px 16px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.announce-bar strong { color: #d9ae32; }
+
+.announce-bar .announce-close {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(244, 242, 236, 0.65);
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 4px 8px;
+}
+
+.announce-bar .announce-close:hover { color: #f4f2ec; }
+
+@media (max-width: 760px) {
+  .announce-bar { font-size: 0.78rem; padding: 10px 40px 10px 12px; }
+}
+
 /* ---------- Header ---------- */
 
 .site-header {
@@ -423,7 +458,7 @@ p { color: var(--color-text-muted); }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -674,9 +709,11 @@ table.rate-table td.rate-value.pending { color: #a3711b; font-size: 0.95rem; }
   position: absolute;
   inset: 0;
   background: radial-gradient(circle at 90% 20%, rgba(212, 175, 55, 0.25), transparent 50%);
+  pointer-events: none;
 }
 
-.cta-banner h2, .cta-banner p { color: #fff; position: relative; }
+.cta-banner h2, .cta-banner p, .cta-banner .btn { position: relative; z-index: 1; }
+.cta-banner h2, .cta-banner p { color: #fff; }
 .cta-banner p { color: rgba(255,255,255,0.82); margin: 14px 0 28px; max-width: 560px; margin-left: auto; margin-right: auto; }
 
 /* ---------- Footer ---------- */
