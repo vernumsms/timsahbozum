@@ -360,6 +360,24 @@
       "title": "İlk Kez Bozum Yapacaklar İçin Kapsamlı Rehber",
       "service": "genel",
       "published": false
+    },
+    {
+      "slug": "mobil-odeme-limitim-neden-kapali-nasil-acilir",
+      "title": "Mobil Ödeme Limitim Neden Kapalı, Nasıl Açılır?",
+      "service": "mobil-odeme",
+      "published": false
+    },
+    {
+      "slug": "mobil-odeme-limiti-nasil-artirilir",
+      "title": "Mobil Ödeme Limiti Nasıl Artırılır?",
+      "service": "mobil-odeme",
+      "published": false
+    },
+    {
+      "slug": "mobil-odeme-limiti-nasil-belirlenir",
+      "title": "Mobil Ödeme Limiti Nasıl Belirlenir?",
+      "service": "mobil-odeme",
+      "published": false
     }
   ]
 }
