@@ -151,34 +151,76 @@ p { color: var(--color-text-muted); }
 .announce-bar {
   background: linear-gradient(90deg, #082720, #0e3a2b);
   color: #f4f2ec;
-  font-size: 0.86rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 10px 44px 10px 16px;
+  padding: 11px 48px;
   position: relative;
-  line-height: 1.4;
 }
 
-.announce-bar strong { color: #d9ae32; }
+.announce-bar .announce-inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  text-align: center;
+}
+
+.announce-bar .announce-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  background: rgba(217, 174, 50, 0.14);
+  border: 1px solid rgba(217, 174, 50, 0.35);
+  color: #d9ae32;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.announce-bar .announce-text {
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgba(244, 242, 236, 0.92);
+}
+
+.announce-bar .announce-text strong {
+  font-weight: 700;
+  color: #f4f2ec;
+  white-space: nowrap;
+}
 
 .announce-bar .announce-close {
   position: absolute;
   right: 14px;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(244, 242, 236, 0.08);
   border: none;
-  color: rgba(244, 242, 236, 0.65);
+  color: rgba(244, 242, 236, 0.75);
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1;
-  padding: 4px 8px;
+  flex-shrink: 0;
 }
 
-.announce-bar .announce-close:hover { color: #f4f2ec; }
+.announce-bar .announce-close:hover { background: rgba(244, 242, 236, 0.18); color: #fff; }
 
 @media (max-width: 760px) {
-  .announce-bar { font-size: 0.78rem; padding: 10px 40px 10px 12px; }
+  .announce-bar { padding: 10px 40px; }
+  .announce-bar .announce-text { font-size: 0.78rem; }
 }
 
 /* ---------- Header ---------- */
