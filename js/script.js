@@ -49,4 +49,15 @@ document.addEventListener('DOMContentLoaded', function () {
   // Footer year
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Promo video play button
+  var promoVideo = document.getElementById('promoVideo');
+  var videoPlayBtn = document.getElementById('videoPlayBtn');
+  if (promoVideo && videoPlayBtn) {
+    videoPlayBtn.addEventListener('click', function () {
+      promoVideo.setAttribute('controls', '');
+      promoVideo.play();
+      videoPlayBtn.style.display = 'none';
+    });
+  }
 });

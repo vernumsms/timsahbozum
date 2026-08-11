@@ -1140,4 +1140,42 @@ table.rate-table td.rate-value.pending { color: #a3711b; font-size: 0.95rem; }
   .services-grid { grid-template-columns: 1fr; }
   table.rate-table th, table.rate-table td { padding: 14px 16px; font-size: 0.9rem; }
   .cta-banner { padding: 40px 24px; }
+  .video-play-btn { width: 68px; height: 68px; }
 }
+
+/* ==========================================================================
+   Video Showcase
+   ========================================================================== */
+.video-showcase {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: #000;
+}
+.video-showcase video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+.video-play-btn {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-dark);
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.video-play-btn:hover { transform: translate(-50%, -50%) scale(1.08); background: var(--color-accent-light); }
+.video-play-btn svg { margin-left: 4px; }
