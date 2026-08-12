@@ -776,6 +776,12 @@
       "title": "SMS Bozum Nedir? TimsahBozum'da SMS ile İşlem Yapılır mı?",
       "service": "genel",
       "published": false
+    },
+    {
+      "slug": "acil-nakit-ihtiyacinda-mobil-odeme-bozdurma",
+      "title": "Acil Nakit İhtiyacında Mobil Ödeme Bozdurma",
+      "service": "mobil-odeme",
+      "published": false
     }
   ]
 }
