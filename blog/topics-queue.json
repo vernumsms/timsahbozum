@@ -739,6 +739,12 @@
       "title": "Öğrenciler Bozum Hizmetinden Nasıl Yararlanır?",
       "service": "genel",
       "published": false
+    },
+    {
+      "slug": "mobil-odeme-limitim-ne-kadar-nasil-ogrenirim",
+      "title": "Mobil Ödeme Limitim Ne Kadar? Nasıl Öğrenirim?",
+      "service": "mobil-odeme",
+      "published": false
     }
   ]
 }
