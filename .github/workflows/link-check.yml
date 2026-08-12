@@ -1,0 +1,32 @@
+name: Kirik link kontrolu
+
+# Her push'ta ve haftada bir tum sitedeki linkleri denetler.
+# Blog otomasyonu insan onayi olmadan yayin yaptigi icin bekci gorevi gorur.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * 1' # her pazartesi 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Link kontrolu (lychee)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # wa.me / whatsapp.com bot isteklerini engelleyebiliyor, fontlar CDN;
+          # 403/429 kabul: bazi siteler CI botlarini engelliyor, yanlis alarm olmasin.
+          args: >-
+            --no-progress
+            --root-dir ${{ github.workspace }}
+            --accept '200..=299,403,429'
+            --exclude 'wa\.me'
+            --exclude 'whatsapp\.com'
+            --exclude 'fonts\.(googleapis|gstatic)\.com'
+            './*.html' './blog/*.html'
+          fail: true

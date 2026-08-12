@@ -1,0 +1,29 @@
+name: IndexNow - sitemap bildirimi
+
+# Sitemap her degistiginde (yeni makale yayinlandiginda) URL'leri
+# IndexNow protokolu uzerinden Bing/Yandex/DuckDuckGo vb. motorlara bildirir.
+# Not: IndexNow anahtari tasarim geregi herkese aciktir (site kokunde
+# {key}.txt olarak yayinlanir), bu yuzden secret olarak saklanmasi gerekmez.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'sitemap.xml'
+  workflow_dispatch:
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        endpoint: [indexnow, bing, yandex]
+    steps:
+      - name: Submit sitemap URLs to IndexNow
+        uses: jakob-bagterp/index-now-submit-sitemap-urls-action@v1
+        with:
+          host: timsahbozum.com
+          api_key: 352c0a99b3a21401a2fe2c231ddeb745
+          api_key_location: https://timsahbozum.com/352c0a99b3a21401a2fe2c231ddeb745.txt
+          endpoint: ${{ matrix.endpoint }}
+          sitemap_locations: https://timsahbozum.com/sitemap.xml

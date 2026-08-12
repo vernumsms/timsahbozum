@@ -1,0 +1,26 @@
+name: Lighthouse performans denetimi
+
+# Onemli sayfalarin Lighthouse skorlarini her push'ta olcer.
+# Performans < 0.80 veya SEO < 0.90'a duserse workflow kirmizi yanar.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'css/**'
+      - 'js/**'
+  workflow_dispatch:
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: '.github/lighthouserc.json'
+          uploadArtifacts: true
+          temporaryPublicStorage: true
