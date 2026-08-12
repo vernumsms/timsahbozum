@@ -162,7 +162,8 @@
       "slug": "itunes-bakiyesi-nedir-nereden-elde-edilir",
       "title": "iTunes Bakiyesi Nedir, Nereden Elde Edilir?",
       "service": "itunes",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-12"
     },
     {
       "slug": "itunes-hediye-karti-kodu-nasil-bozdurulur",
