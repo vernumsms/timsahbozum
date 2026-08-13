@@ -36,7 +36,7 @@ const TAGLINE = {
 };
 
 const CHIPS = {
-  'razer-gold': ['%60 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
+  'razer-gold': ['%70 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
   'pokus': ['%60 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
   'paycell': ['%60 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
   'itunes': ['%55 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],

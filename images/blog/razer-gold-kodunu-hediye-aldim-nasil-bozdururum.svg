@@ -41,7 +41,7 @@
     <g transform="translate(64, 284)">
       <rect width="100.8" height="34" rx="9" fill="rgba(244,242,236,0.08)" stroke="rgba(244,242,236,0.16)"/>
       <g transform="translate(11, 9)" stroke="#ecc568" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></g>
-      <text x="35" y="21" font-family="Manrope, sans-serif" font-weight="700" font-size="13.5" fill="#f4f2ec">%60 Oran</text>
+      <text x="35" y="21" font-family="Manrope, sans-serif" font-weight="700" font-size="13.5" fill="#f4f2ec">%70 Oran</text>
     </g>
     <g transform="translate(176.8, 284)">
       <rect width="143.8" height="34" rx="9" fill="rgba(244,242,236,0.08)" stroke="rgba(244,242,236,0.16)"/>

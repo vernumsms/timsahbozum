@@ -50,9 +50,15 @@
   </url>
   <url>
     <loc>https://timsahbozum.com/blog.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://timsahbozum.com/blog/mobil-odeme-bozdurma-yasal-mi.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://timsahbozum.com/blog/razer-gold-kodu-kullanilmissa-ne-olur.html</loc>
