@@ -2,13 +2,14 @@ name: Kirik link kontrolu
 
 # Pages deploy'u tamamlandiktan sonra ve haftada bir tum sitedeki linkleri denetler.
 # Blog otomasyonu insan onayi olmadan yayin yaptigi icin bekci gorevi gorur.
-# push yerine workflow_run: push aninda kosunca yeni sayfa henuz canliya
-# cikmadigi icin kendi URL'si 404 donuyordu (yaris durumu, 13.08.2026).
+# push aninda kosunca yeni sayfa henuz canliya cikmadigi icin kendi URL'si
+# 404 donuyordu (yaris durumu, 13.08.2026). workflow_run da ise yaramadi:
+# "pages build and deployment" dinamik workflow oldugundan tetiklemiyor.
+# deployment_status ise Pages deploy'u sonuclaninca GitHub'in yayinladigi
+# gercek repo olayi.
 
 on:
-  workflow_run:
-    workflows: ["pages build and deployment"]
-    types: [completed]
+  deployment_status:
   schedule:
     - cron: '0 6 * * 1' # her pazartesi 06:00 UTC
   workflow_dispatch:
@@ -16,14 +17,14 @@ on:
 jobs:
   lychee:
     runs-on: ubuntu-latest
-    # Deploy basarisizsa link kontrolu yanlis alarm uretir, kosma.
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    # Sadece basarili deploy'da kos; basarisiz deploy'da yanlis alarm uretir.
+    if: github.event_name != 'deployment_status' || github.event.deployment_status.state == 'success'
     steps:
       - uses: actions/checkout@v4
 
       # Deploy bitse de CDN'e yayilma birkac saniye surebilir.
       - name: CDN yayilmasini bekle
-        if: github.event_name == 'workflow_run'
+        if: github.event_name == 'deployment_status'
         run: sleep 30
 
       - name: Link kontrolu (lychee)
