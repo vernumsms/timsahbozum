@@ -77,6 +77,30 @@
       "published": false
     },
     {
+      "slug": "mobil-odeme-bozdurmada-odeme-nasil-tahsil-edilir",
+      "title": "Mobil Ödeme Bozdurmada Ödemeni Nasıl Alırsın? IBAN ile Tahsilat",
+      "service": "mobil-odeme",
+      "published": false
+    },
+    {
+      "slug": "mobil-odeme-bozdurma-komisyon-oranlari-nasil-belirlenir",
+      "title": "Mobil Ödeme Bozdurma Komisyon Oranları Nasıl Belirlenir?",
+      "service": "mobil-odeme",
+      "published": false
+    },
+    {
+      "slug": "mobil-odeme-limit-bozum-nedir",
+      "title": "Mobil Ödeme Limit Bozum Nedir? Limitin Tamamı Bozdurulur mu?",
+      "service": "mobil-odeme",
+      "published": false
+    },
+    {
+      "slug": "mobil-odeme-bozdurma-kredi-notunu-etkiler-mi",
+      "title": "Mobil Ödeme Bozdurma Kredi Notunu Etkiler mi?",
+      "service": "mobil-odeme",
+      "published": false
+    },
+    {
       "slug": "hangi-operatorlerde-mobil-odeme-bozdurma-yapiliyor",
       "title": "Hangi Operatörlerde Mobil Ödeme Bozdurma Yapılıyor?",
       "service": "mobil-odeme",
