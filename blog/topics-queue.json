@@ -26,7 +26,8 @@
       "slug": "bozum-islemi-nedir-yeni-baslayanlar-icin",
       "title": "Bozum İşlemi Nedir, Nasıl Çalışır? (Yeni Başlayanlar İçin)",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-14"
     },
     {
       "slug": "mobil-odeme-nakite-nasil-cevrilir",
