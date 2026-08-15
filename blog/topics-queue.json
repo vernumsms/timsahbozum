@@ -33,7 +33,8 @@
       "slug": "mobil-odeme-nakite-nasil-cevrilir",
       "title": "Mobil Ödeme Bakiyesi Nakite Nasıl Çevrilir?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-15"
     },
     {
       "slug": "mobil-odeme-bakiyesi-nedir-nasil-olusur",
