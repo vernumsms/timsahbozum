@@ -40,7 +40,8 @@
       "slug": "mobil-odeme-bakiyesi-nedir-nasil-olusur",
       "title": "Mobil Ödeme Bakiyesi Nedir, Nasıl Oluşur?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-16"
     },
     {
       "slug": "vodafone-mobil-odeme-bozdurma-adim-adim",
