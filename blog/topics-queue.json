@@ -47,7 +47,8 @@
       "slug": "vodafone-mobil-odeme-bozdurma-adim-adim",
       "title": "Vodafone Mobil Ödeme Bozdurma Adım Adım Nasıl Yapılır?",
       "service": "vodafone",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-17"
     },
     {
       "slug": "turk-telekom-mobil-odeme-bozdurma-adim-adim",
