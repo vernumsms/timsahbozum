@@ -54,7 +54,8 @@
       "slug": "turk-telekom-mobil-odeme-bozdurma-adim-adim",
       "title": "Türk Telekom Mobil Ödeme Bozdurma Adım Adım Nasıl Yapılır?",
       "service": "turk-telekom",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-18"
     },
     {
       "slug": "mobil-odeme-bozdurma-yasal-mi",
