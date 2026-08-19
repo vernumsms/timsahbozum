@@ -72,6 +72,12 @@
       "published_date": "2026-08-19"
     },
     {
+      "slug": "sms-bozum-nedir-timsahbozumda-sms-ile-islem-var-mi",
+      "title": "SMS Bozum Nedir? TimsahBozum'da SMS ile İşlem Yapılır mı?",
+      "service": "genel",
+      "published": false
+    },
+    {
       "slug": "mobil-bozum-yorumlari-nelere-dikkat-etmeli",
       "title": "Mobil Bozum Yorumları: Kullanıcı Yorumlarını Okurken Nelere Dikkat Etmeli?",
       "service": "genel",
@@ -87,12 +93,6 @@
       "slug": "fatura-bozum-nedir",
       "title": "Fatura Bozum Nedir?",
       "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "sms-bozum-nedir-timsahbozumda-sms-ile-islem-var-mi",
-      "title": "SMS Bozum Nedir? TimsahBozum'da SMS ile İşlem Yapılır mı?",
-      "service": "genel",
       "published": false
     },
     {
