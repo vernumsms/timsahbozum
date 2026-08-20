@@ -75,7 +75,8 @@
       "slug": "sms-bozum-nedir-timsahbozumda-sms-ile-islem-var-mi",
       "title": "SMS Bozum Nedir? TimsahBozum'da SMS ile İşlem Yapılır mı?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-20"
     },
     {
       "slug": "mobil-bozum-yorumlari-nelere-dikkat-etmeli",
