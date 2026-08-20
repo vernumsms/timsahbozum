@@ -21,7 +21,8 @@
     ".tb-bot-head b{font-size:15px}.tb-bot-head small{color:#9fd3b6;font-size:12px;display:block}" +
     ".tb-bot-dot{width:9px;height:9px;border-radius:50%;background:#3ddc84}.tb-bot-dot.night{background:#d9ae32}" +
     ".tb-bot-x{margin-left:auto;background:none;border:none;color:#9fd3b6;font-size:20px;cursor:pointer}" +
-    ".tb-bot-body{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}" +
+    ".tb-bot-body{flex:1 1 auto;min-height:48px;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}" +
+    "#tbActions{overflow-y:auto;max-height:62%;flex:0 0 auto}" +
     ".tb-msg{background:#16281f;color:#e7f5ec;padding:9px 12px;border-radius:12px;font-size:14px;line-height:1.5;max-width:90%}" +
     ".tb-msg.user{align-self:flex-end;background:#1b5741;color:#eafff2}" +
     ".tb-opts{display:flex;flex-direction:column;gap:6px;padding:0 14px 12px}" +
