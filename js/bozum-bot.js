@@ -145,6 +145,7 @@
         '<input id="tbAmount" placeholder="Kodun değeri (TL)" inputmode="numeric" autocomplete="off">'
       : "";
     f.innerHTML = codeHtml +
+      '<input id="tbName" placeholder="IBAN sahibi ad soyad" autocomplete="off">' +
       '<input id="tbIban" placeholder="IBAN (TR...)" autocomplete="off">' +
       '<input id="tbWa" placeholder="WhatsApp numaran (5xx...)" inputmode="numeric" autocomplete="off">' +
       '<button id="tbSend">Siparişi oluştur</button>';
@@ -160,6 +161,8 @@
         payload.amountTry = (f.querySelector("#tbAmount").value || "").replace(/[^\d]/g, "");
         if (!payload.amountTry || parseInt(payload.amountTry, 10) <= 0) { err.textContent = "Kodun TL değerini yaz (ör. 500)."; return; }
       }
+      payload.name = (f.querySelector("#tbName").value || "").trim();
+      if (payload.name.replace(/\s+/g, " ").length < 3 || !/\s/.test(payload.name.trim())) { err.textContent = "IBAN sahibinin ad ve soyadını yaz."; return; }
       payload.iban = (f.querySelector("#tbIban").value || "").trim();
       payload.whatsapp = (f.querySelector("#tbWa").value || "").trim();
       if (!/^TR/i.test(payload.iban.replace(/\s+/g, ""))) { err.textContent = "IBAN TR ile başlamalı."; return; }
