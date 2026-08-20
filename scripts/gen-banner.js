@@ -9,6 +9,7 @@ const ICONS = {
   'itunes': `<circle cx="12" cy="12" r="9"/><path d="M9.5 8.5v8l6-4z" fill="#d9ae32" stroke="none"/>`,
   'vodafone': `<rect x="4" y="2" width="16" height="20" rx="3"/><path d="M9 6h6M10 18h4"/>`,
   'turk-telekom': `<rect x="4" y="2" width="16" height="20" rx="3"/><path d="M9 6h6M10 18h4"/>`,
+  'turkcell': `<rect x="4" y="2" width="16" height="20" rx="3"/><path d="M9 6h6M10 18h4"/>`,
   'mobil-odeme': `<rect x="4" y="2" width="16" height="20" rx="3"/><path d="M9 6h6M10 18h4"/>`,
   'genel': `<path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/>`,
 };
@@ -20,6 +21,7 @@ const BADGE = {
   'itunes': 'İTUNES',
   'vodafone': 'VODAFONE',
   'turk-telekom': 'TÜRK TELEKOM',
+  'turkcell': 'TURKCELL',
   'mobil-odeme': 'MOBİL ÖDEME',
   'genel': 'BOZUM REHBERİ',
 };
@@ -31,6 +33,7 @@ const TAGLINE = {
   'itunes': 'iTunes kodu bozdurma süreci ve dikkat edilmesi gerekenler',
   'vodafone': 'Vodafone mobil ödeme bozdurma süreci ve pratik bilgiler',
   'turk-telekom': 'Türk Telekom mobil ödeme bozdurma süreci ve pratik bilgiler',
+  'turkcell': 'Turkcell mobil ödeme bozdurma süreci ve pratik bilgiler',
   'mobil-odeme': 'Mobil ödeme bozdurma süreci ve pratik bilgiler',
   'genel': 'TimsahBozum ile güvenli ve hızlı bozum rehberi',
 };
@@ -42,6 +45,7 @@ const CHIPS = {
   'itunes': ['%55 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
   'vodafone': ['%50 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
   'turk-telekom': ['%50 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
+  'turkcell': ['%30 Oran', 'Paycell ile %60', 'Güvenli İşlem'],
   'mobil-odeme': ['%50 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
   'genel': ['WhatsApp’tan', '10:00-03:00', 'Ücretsiz Bilgi'],
 };
