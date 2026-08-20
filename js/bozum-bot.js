@@ -35,6 +35,10 @@
     ".tb-coderow .tb-rm{flex:0 0 auto;background:#2a1414;color:#f0a0a0;border:1px solid #613;border-radius:8px;cursor:pointer;padding:0 10px;font-size:16px}" +
     ".tb-add{background:none;color:#ecc568;border:1px dashed #2c4d3c;border-radius:8px;padding:8px;cursor:pointer;font-size:13px;margin-bottom:10px}" +
     ".tb-add:hover{border-color:#d9ae32}" +
+    ".tb-checking{background:#16281f;color:#ecc568;padding:10px 13px;border-radius:12px;font-size:14px;line-height:1.5;max-width:90%;display:flex;align-items:center;gap:9px}" +
+    ".tb-spin{width:16px;height:16px;border:2px solid #2c4d3c;border-top-color:#d9ae32;border-radius:50%;flex-shrink:0;animation:tbspin .8s linear infinite}" +
+    "@keyframes tbspin{to{transform:rotate(360deg)}}" +
+    ".tb-done{background:#123f2f;color:#eafff2;padding:10px 13px;border-radius:12px;font-size:14px;line-height:1.55;max-width:92%;border:1px solid #2c6b4f}" +
     ".tb-field button{background:linear-gradient(135deg,#ecc568,#d9ae32);color:#082720;border:none;border-radius:8px;padding:10px;font-weight:600;cursor:pointer;font-size:14px}" +
     ".tb-err{color:#f0a0a0;font-size:12px;padding:0 14px}" +
     ".tb-bot-foot{padding:8px 14px;font-size:11px;color:#6f9a83;border-top:1px solid #1c3327}";
@@ -128,7 +132,8 @@
   // gece Razer
   function razerNight() {
     me("Razer Gold (gece)");
-    bot("Razer Gold kodunu şimdi güvenle sıraya alalım. <b>Ödemen sabah 10:00'dan itibaren</b> IBAN'ına yapılır; kodun ödeme yapılmadan önce doğrulanır. Ödeme oranı %" + RATES.razer + ". Devam edelim mi?");
+    bot("⚠️ Yalnızca <b>Razer Gold TL</b> kodları kabul edilir. Global veya farklı para birimi (USD, EUR vb.) kodları işleme alınmaz.");
+    bot("Razer Gold TL kodunu şimdi güvenle sıraya alalım. <b>Ödemen sabah 10:00'dan itibaren</b> IBAN'ına yapılır; kodun ödeme yapılmadan önce doğrulanır ve <b>gerçek yüklenen tutar</b> üzerinden ödenir. Ödeme oranı %" + RATES.razer + ". Devam edelim mi?");
     opts([
       { label: "✅ Evet, sıraya al", onClick: function () { form("razer"); } },
       { label: "↩︎ Geri", onClick: menuServices },
@@ -136,7 +141,7 @@
   }
   function itunesNight() {
     me("iTunes (gece)");
-    bot("iTunes için 500 TL değerinde hediye kartını <b>kod@timsahbozum.com</b> adresine gönderirsin; sistem otomatik doğrular ve sıraya alır. Ödeme oranı %" + RATES.itunes + ", ödemen sabah yapılır. Önce sipariş bilgilerini alalım.");
+    bot("⚠️ iTunes işlemi <b>yalnızca maile gönderilen hediye kartı</b> şeklinde kabul edilir. Hediye kartını <b>kod@timsahbozum.com</b> adresine gönderirsin; sistem otomatik doğrular. Ödeme oranı %" + RATES.itunes + ", ödemen sabah 10:00'dan itibaren yapılır. Önce sipariş bilgilerini alalım.");
     opts([
       { label: "✅ Evet, sıraya al", onClick: function () { form("itunes"); } },
       { label: "↩︎ Geri", onClick: menuServices },
@@ -159,6 +164,10 @@
 
     var codesWrap = null, addBtn = null;
     if (service === "razer") {
+      var note = document.createElement("div");
+      note.style.cssText = "color:#9fd3b6;font-size:12px;padding:0 2px 8px";
+      note.innerHTML = "Yalnızca <b>Razer Gold TL</b> kodu. Kodu ve TL değerini gir; birden fazla kod ekleyebilirsin.";
+      f.appendChild(note);
       codesWrap = document.createElement("div"); codesWrap.id = "tbCodes";
       codesWrap.appendChild(codeRow(true));
       addBtn = document.createElement("button");
@@ -208,9 +217,10 @@
       }).then(function (r) { return r.json(); }).then(function (d) {
         clearActions();
         if (d.ok) {
-          bot("✅ " + d.message);
-          if (service === "razer") { bot("Kodunuz doğrulanıyor, lütfen bu pencereyi kapatmayın…"); pollStatus(d.id, 0); }
-          else { setTimeout(home, 900); }
+          if (service === "razer") {
+            var chk = checking("Kodunuz kontrol ediliyor, lütfen bekleyin…");
+            pollStatus(d.id, 0, chk);
+          } else { bot("✅ " + d.message); setTimeout(home, 1200); }
         } else { bot("⚠️ " + (d.error || "Bir sorun oldu, lütfen WhatsApp'tan yaz.")); setTimeout(home, 700); }
       }).catch(function () {
         clearActions();
@@ -220,16 +230,33 @@
     };
   }
 
+  // Animasyonlu "kontrol ediliyor" balonu
+  function checking(text) {
+    var d = document.createElement("div"); d.className = "tb-checking";
+    d.innerHTML = '<span class="tb-spin"></span><span class="tb-ctext"></span>';
+    d.querySelector(".tb-ctext").textContent = text;
+    body.appendChild(d); body.scrollTop = body.scrollHeight;
+    return d;
+  }
+
   // Kod onaylanana kadar siparişi izle; onaylanınca gerçek tutarla mesaj göster.
-  var lastPollMsg = "";
-  function pollStatus(id, tries) {
-    if (tries > 40) { bot("Kodunuz sırada. Onaylanınca WhatsApp'tan bilgilendirileceksiniz."); setTimeout(home, 1500); return; }
+  function pollStatus(id, tries, chk) {
+    if (tries > 45) {
+      if (chk) { chk.className = "tb-done"; chk.textContent = "Kodunuz sırada. Onaylanınca WhatsApp'tan bilgilendirileceksiniz."; }
+      setTimeout(home, 2000); return;
+    }
     fetch(WORKER_URL + "/api/order-status?id=" + encodeURIComponent(id)).then(function (r) { return r.json(); }).then(function (d) {
-      if (!d.ok) { setTimeout(function () { pollStatus(id, tries + 1); }, 8000); return; }
-      if (d.done) { bot(d.message); setTimeout(home, 2500); return; }
-      if (d.message && d.message !== lastPollMsg) { lastPollMsg = d.message; }
-      setTimeout(function () { pollStatus(id, tries + 1); }, 8000);
-    }).catch(function () { setTimeout(function () { pollStatus(id, tries + 1); }, 9000); });
+      if (!d.ok) { setTimeout(function () { pollStatus(id, tries + 1, chk); }, 8000); return; }
+      if (d.done) {
+        if (chk) { chk.className = "tb-done"; chk.textContent = d.message; }
+        else bot(d.message);
+        body.scrollTop = body.scrollHeight;
+        setTimeout(home, 3500); return;
+      }
+      // devam ediyor: ara ilerlemeyi göster (ör. "2/3 kod kontrol edildi")
+      if (chk && d.message) { var el = chk.querySelector(".tb-ctext"); if (el) el.textContent = d.message; }
+      setTimeout(function () { pollStatus(id, tries + 1, chk); }, 8000);
+    }).catch(function () { setTimeout(function () { pollStatus(id, tries + 1, chk); }, 9000); });
   }
 
   // ---- durum ----
