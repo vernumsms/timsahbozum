@@ -207,14 +207,29 @@
         method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(payload),
       }).then(function (r) { return r.json(); }).then(function (d) {
         clearActions();
-        if (d.ok) { bot("✅ " + d.message); setTimeout(home, 900); }
-        else { bot("⚠️ " + (d.error || "Bir sorun oldu, lütfen WhatsApp'tan yaz.")); setTimeout(home, 700); }
+        if (d.ok) {
+          bot("✅ " + d.message);
+          if (service === "razer") { bot("Kodunuz doğrulanıyor, lütfen bu pencereyi kapatmayın…"); pollStatus(d.id, 0); }
+          else { setTimeout(home, 900); }
+        } else { bot("⚠️ " + (d.error || "Bir sorun oldu, lütfen WhatsApp'tan yaz.")); setTimeout(home, 700); }
       }).catch(function () {
         clearActions();
         bot("Bağlantı kurulamadı. Lütfen WhatsApp'tan yazar mısın?");
         setTimeout(menuServices, 600);
       });
     };
+  }
+
+  // Kod onaylanana kadar siparişi izle; onaylanınca gerçek tutarla mesaj göster.
+  var lastPollMsg = "";
+  function pollStatus(id, tries) {
+    if (tries > 40) { bot("Kodunuz sırada. Onaylanınca WhatsApp'tan bilgilendirileceksiniz."); setTimeout(home, 1500); return; }
+    fetch(WORKER_URL + "/api/order-status?id=" + encodeURIComponent(id)).then(function (r) { return r.json(); }).then(function (d) {
+      if (!d.ok) { setTimeout(function () { pollStatus(id, tries + 1); }, 8000); return; }
+      if (d.done) { bot(d.message); setTimeout(home, 2500); return; }
+      if (d.message && d.message !== lastPollMsg) { lastPollMsg = d.message; }
+      setTimeout(function () { pollStatus(id, tries + 1); }, 8000);
+    }).catch(function () { setTimeout(function () { pollStatus(id, tries + 1); }, 9000); });
   }
 
   // ---- durum ----
