@@ -29,6 +29,12 @@
     ".tb-opt:hover{border-color:#d9ae32}" +
     ".tb-field{display:flex;flex-direction:column;gap:6px;padding:0 14px 12px}" +
     ".tb-field input{background:#0c1611;border:1px solid #2c4d3c;border-radius:8px;color:#e7f5ec;padding:9px;font-size:14px}" +
+    ".tb-coderow{display:flex;gap:6px;margin-bottom:6px}" +
+    ".tb-coderow .tb-code{flex:2;min-width:0;background:#0c1611;border:1px solid #2c4d3c;border-radius:8px;color:#e7f5ec;padding:9px;font-size:14px}" +
+    ".tb-coderow .tb-amt{flex:1;min-width:0;background:#0c1611;border:1px solid #2c4d3c;border-radius:8px;color:#e7f5ec;padding:9px;font-size:14px}" +
+    ".tb-coderow .tb-rm{flex:0 0 auto;background:#2a1414;color:#f0a0a0;border:1px solid #613;border-radius:8px;cursor:pointer;padding:0 10px;font-size:16px}" +
+    ".tb-add{background:none;color:#ecc568;border:1px dashed #2c4d3c;border-radius:8px;padding:8px;cursor:pointer;font-size:13px;margin-bottom:10px}" +
+    ".tb-add:hover{border-color:#d9ae32}" +
     ".tb-field button{background:linear-gradient(135deg,#ecc568,#d9ae32);color:#082720;border:none;border-radius:8px;padding:10px;font-weight:600;cursor:pointer;font-size:14px}" +
     ".tb-err{color:#f0a0a0;font-size:12px;padding:0 14px}" +
     ".tb-bot-foot{padding:8px 14px;font-size:11px;color:#6f9a83;border-top:1px solid #1c3327}";
@@ -137,45 +143,72 @@
     ]);
   }
 
+  function codeRow(first) {
+    var row = document.createElement("div"); row.className = "tb-coderow";
+    row.innerHTML =
+      '<input class="tb-code" placeholder="Razer Gold kodu (kod + seri no)" autocomplete="off">' +
+      '<input class="tb-amt" placeholder="TL değeri" inputmode="numeric" autocomplete="off">' +
+      (first ? "" : '<button class="tb-rm" aria-label="Kaldır">×</button>');
+    if (!first) row.querySelector(".tb-rm").onclick = function () { row.remove(); };
+    return row;
+  }
+
   function form(service) {
     clearActions();
     var f = document.createElement("div"); f.className = "tb-field";
-    var codeHtml = service === "razer"
-      ? '<input id="tbCode" placeholder="Razer Gold kodu" autocomplete="off">' +
-        '<input id="tbAmount" placeholder="Kodun değeri (TL)" inputmode="numeric" autocomplete="off">'
-      : "";
-    f.innerHTML = codeHtml +
+
+    var codesWrap = null, addBtn = null;
+    if (service === "razer") {
+      codesWrap = document.createElement("div"); codesWrap.id = "tbCodes";
+      codesWrap.appendChild(codeRow(true));
+      addBtn = document.createElement("button");
+      addBtn.type = "button"; addBtn.className = "tb-add"; addBtn.textContent = "+ Başka kod ekle";
+      addBtn.onclick = function () { codesWrap.appendChild(codeRow(false)); };
+      f.appendChild(codesWrap); f.appendChild(addBtn);
+    }
+
+    var rest = document.createElement("div"); rest.className = "tb-field";
+    rest.innerHTML =
       '<input id="tbName" placeholder="IBAN sahibi ad soyad" autocomplete="off">' +
       '<input id="tbIban" placeholder="IBAN (TR...)" autocomplete="off">' +
       '<input id="tbWa" placeholder="WhatsApp numaran (5xx...)" inputmode="numeric" autocomplete="off">' +
       '<button id="tbSend">Siparişi oluştur</button>';
+    f.appendChild(rest);
+
     var err = document.createElement("div"); err.className = "tb-err";
     actions.appendChild(f); actions.appendChild(err);
 
-    f.querySelector("#tbSend").onclick = function () {
+    rest.querySelector("#tbSend").onclick = function () {
       err.textContent = "";
       var payload = { service: service };
       if (service === "razer") {
-        payload.code = (f.querySelector("#tbCode").value || "").trim();
-        if (payload.code.replace(/[\s-]/g, "").length < 10) { err.textContent = "Razer Gold kodunu kontrol et."; return; }
-        payload.amountTry = (f.querySelector("#tbAmount").value || "").replace(/[^\d]/g, "");
-        if (!payload.amountTry || parseInt(payload.amountTry, 10) <= 0) { err.textContent = "Kodun TL değerini yaz (ör. 500)."; return; }
+        var codes = [];
+        var rows = codesWrap.querySelectorAll(".tb-coderow");
+        for (var i = 0; i < rows.length; i++) {
+          var code = (rows[i].querySelector(".tb-code").value || "").trim();
+          var amt = (rows[i].querySelector(".tb-amt").value || "").replace(/[^\d]/g, "");
+          if (code.replace(/[\s-]/g, "").length < 10) { err.textContent = (i + 1) + ". kodu kontrol et."; return; }
+          if (!amt || parseInt(amt, 10) <= 0) { err.textContent = (i + 1) + ". kodun TL değerini yaz."; return; }
+          codes.push({ code: code, amountTry: amt });
+        }
+        if (!codes.length) { err.textContent = "En az bir kod gir."; return; }
+        payload.codes = codes;
       }
-      payload.name = (f.querySelector("#tbName").value || "").trim();
+      payload.name = (rest.querySelector("#tbName").value || "").trim();
       if (payload.name.replace(/\s+/g, " ").length < 3 || !/\s/.test(payload.name.trim())) { err.textContent = "IBAN sahibinin ad ve soyadını yaz."; return; }
-      payload.iban = (f.querySelector("#tbIban").value || "").trim();
-      payload.whatsapp = (f.querySelector("#tbWa").value || "").trim();
+      payload.iban = (rest.querySelector("#tbIban").value || "").trim();
+      payload.whatsapp = (rest.querySelector("#tbWa").value || "").trim();
       if (!/^TR/i.test(payload.iban.replace(/\s+/g, ""))) { err.textContent = "IBAN TR ile başlamalı."; return; }
       if (payload.whatsapp.replace(/\D/g, "").length < 10) { err.textContent = "WhatsApp numaranı kontrol et."; return; }
 
-      f.querySelector("#tbSend").disabled = true;
-      me(service === "razer" ? "Razer kodu + IBAN gönderildi" : "iTunes sipariş bilgileri gönderildi");
+      rest.querySelector("#tbSend").disabled = true;
+      me(service === "razer" ? (payload.codes.length + " kod + IBAN gönderildi") : "iTunes sipariş bilgileri gönderildi");
       fetch(WORKER_URL + "/api/order", {
         method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(payload),
       }).then(function (r) { return r.json(); }).then(function (d) {
         clearActions();
-        if (d.ok) { bot("✅ " + d.message); setTimeout(home, 800); }
-        else { bot("⚠️ " + (d.error || "Bir sorun oldu, lütfen WhatsApp'tan yaz.")); setTimeout(home, 600); }
+        if (d.ok) { bot("✅ " + d.message); setTimeout(home, 900); }
+        else { bot("⚠️ " + (d.error || "Bir sorun oldu, lütfen WhatsApp'tan yaz.")); setTimeout(home, 700); }
       }).catch(function () {
         clearActions();
         bot("Bağlantı kurulamadı. Lütfen WhatsApp'tan yazar mısın?");
