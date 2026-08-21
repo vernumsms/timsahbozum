@@ -82,7 +82,8 @@
       "slug": "mobil-bozum-yorumlari-nelere-dikkat-etmeli",
       "title": "Mobil Bozum Yorumları: Kullanıcı Yorumlarını Okurken Nelere Dikkat Etmeli?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-21"
     },
     {
       "slug": "nakit-bozum-nedir-nasil-calisir",
