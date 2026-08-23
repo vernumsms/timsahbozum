@@ -1,834 +1,834 @@
 {
-  "_readme": "Otomatik günlük blog yayın kuyruğu. Her satır bir makale konusudur. published=false olanlar sırayla (listelenme sırasına göre) yayınlanır; sıra = yayın önceliğidir ve GSC arama verisine göre yeniden sıralanabilir (13.08.2026: temel/pillar konular öne alındı). Bir konu yayınlandığında published=true yapılır ve published_date (YYYY-MM-DD, Europe/Istanbul) eklenir. Günde en fazla 1 makale yayınlanır. Yeni konu eklerken listenin uygun öncelik noktasına ekle; mevcut kayıtların slug/alanlarını değiştirme.",
-  "topics": [
-    {
-      "slug": "razer-gold-kodu-nasil-bozdurulur-adim-adim",
-      "title": "Razer Gold Kodu Nasıl Bozdurulur? Adım Adım Rehber",
-      "service": "razer-gold",
-      "published": true,
-      "published_date": "2026-08-11"
-    },
-    {
-      "slug": "razer-gold-kodu-kullanilmissa-ne-olur",
-      "title": "Razer Gold Kodu Kullanılmışsa Ne Olur?",
-      "service": "razer-gold",
-      "published": true,
-      "published_date": "2026-08-13"
-    },
-    {
-      "slug": "itunes-bakiyesi-nedir-nereden-elde-edilir",
-      "title": "iTunes Bakiyesi Nedir, Nereden Elde Edilir?",
-      "service": "itunes",
-      "published": true,
-      "published_date": "2026-08-12"
-    },
-    {
-      "slug": "bozum-islemi-nedir-yeni-baslayanlar-icin",
-      "title": "Bozum İşlemi Nedir, Nasıl Çalışır? (Yeni Başlayanlar İçin)",
-      "service": "genel",
-      "published": true,
-      "published_date": "2026-08-14"
-    },
-    {
-      "slug": "mobil-odeme-nakite-nasil-cevrilir",
-      "title": "Mobil Ödeme Bakiyesi Nakite Nasıl Çevrilir?",
-      "service": "mobil-odeme",
-      "published": true,
-      "published_date": "2026-08-15"
-    },
-    {
-      "slug": "mobil-odeme-bakiyesi-nedir-nasil-olusur",
-      "title": "Mobil Ödeme Bakiyesi Nedir, Nasıl Oluşur?",
-      "service": "mobil-odeme",
-      "published": true,
-      "published_date": "2026-08-16"
-    },
-    {
-      "slug": "vodafone-mobil-odeme-bozdurma-adim-adim",
-      "title": "Vodafone Mobil Ödeme Bozdurma Adım Adım Nasıl Yapılır?",
-      "service": "vodafone",
-      "published": true,
-      "published_date": "2026-08-17"
-    },
-    {
-      "slug": "turk-telekom-mobil-odeme-bozdurma-adim-adim",
-      "title": "Türk Telekom Mobil Ödeme Bozdurma Adım Adım Nasıl Yapılır?",
-      "service": "turk-telekom",
-      "published": true,
-      "published_date": "2026-08-18"
-    },
-    {
-      "slug": "mobil-odeme-bozdurma-yasal-mi",
-      "title": "Mobil Ödeme Bozdurma Yasal mı? Merak Edilenler ve Gerçekler",
-      "service": "genel",
-      "published": true,
-      "published_date": "2026-08-13"
-    },
-    {
-      "slug": "en-guvenilir-mobil-odeme-bozdurma-nasil-secilir",
-      "title": "En Güvenilir Mobil Ödeme Bozdurma Sitesi Nasıl Seçilir?",
-      "service": "mobil-odeme",
-      "published": true,
-      "published_date": "2026-08-19"
-    },
-    {
-      "slug": "sms-bozum-nedir-timsahbozumda-sms-ile-islem-var-mi",
-      "title": "SMS Bozum Nedir? TimsahBozum'da SMS ile İşlem Yapılır mı?",
-      "service": "genel",
-      "published": true,
-      "published_date": "2026-08-20"
-    },
-    {
-      "slug": "mobil-bozum-yorumlari-nelere-dikkat-etmeli",
-      "title": "Mobil Bozum Yorumları: Kullanıcı Yorumlarını Okurken Nelere Dikkat Etmeli?",
-      "service": "genel",
-      "published": true,
-      "published_date": "2026-08-21"
-    },
-    {
-      "slug": "nakit-bozum-nedir-nasil-calisir",
-      "title": "Nakit Bozum Nedir, Nasıl Çalışır?",
-      "service": "genel",
-      "published": true,
-      "published_date": "2026-08-22"
-    },
-    {
-      "slug": "fatura-bozum-nedir",
-      "title": "Fatura Bozum Nedir?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bozdurmada-odeme-nasil-tahsil-edilir",
-      "title": "Mobil Ödeme Bozdurmada Ödemeni Nasıl Alırsın? IBAN ile Tahsilat",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bozdurma-komisyon-oranlari-nasil-belirlenir",
-      "title": "Mobil Ödeme Bozdurma Komisyon Oranları Nasıl Belirlenir?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-limit-bozum-nedir",
-      "title": "Mobil Ödeme Limit Bozum Nedir? Limitin Tamamı Bozdurulur mu?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bozdurma-kredi-notunu-etkiler-mi",
-      "title": "Mobil Ödeme Bozdurma Kredi Notunu Etkiler mi?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "hangi-operatorlerde-mobil-odeme-bozdurma-yapiliyor",
-      "title": "Hangi Operatörlerde Mobil Ödeme Bozdurma Yapılıyor?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "turkcell-mobil-odeme-bozdurma-ne-zaman-aktif",
-      "title": "Turkcell Mobil Ödeme Bozdurma Ne Zaman Aktif Olacak?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "pokus-bakiyesi-nedir-nasil-olusur",
-      "title": "Pokus Bakiyesi Nedir, Nasıl Oluşur?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "paycell-bakiyesi-nasil-olusur-nereden-gelir",
-      "title": "Paycell Bakiyesi Nasıl Oluşur, Nereden Gelir?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "itunes-hediye-karti-kodu-nasil-bozdurulur",
-      "title": "iTunes Hediye Kartı Kodu Nasıl Bozdurulur?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodunu-guvenle-bozdurmanin-yollari",
-      "title": "Razer Gold Kodunu Güvenle Bozdurmanın Yolları",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "ilk-kez-bozum-yapacaklar-icin-kapsamli-rehber",
-      "title": "İlk Kez Bozum Yapacaklar İçin Kapsamlı Rehber",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "acil-nakit-ihtiyacinda-mobil-odeme-bozdurma",
-      "title": "Acil Nakit İhtiyacında Mobil Ödeme Bozdurma",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "faturali-faturasiz-hatlarda-mobil-odeme-farki",
-      "title": "Faturalı ve Faturasız Hatlarda Mobil Ödeme Bozdurma Farkı",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bakiyesi-ile-kontor-bakiyesi-karistirilir-mi",
-      "title": "Mobil Ödeme Bakiyesi ile Kontör Bakiyesi Karıştırılır mı?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bakiyesi-google-playde-nasil-kullanilir",
-      "title": "Mobil Ödeme Bakiyesi Google Play'de Nasıl Kullanılır?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bozdurma-kontor-bozdurma-ayni-mi",
-      "title": "Mobil Ödeme Bozdurma ile Kontör Bozdurma Aynı Şey mi?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bakiyesi-kismi-bozdurulabilir-mi",
-      "title": "Mobil Ödeme Bakiyesi Kısmi Bozdurulabilir mi?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-limitim-neden-kapali-nasil-acilir",
-      "title": "Mobil Ödeme Limitim Neden Kapalı, Nasıl Açılır?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-limiti-nasil-artirilir",
-      "title": "Mobil Ödeme Limiti Nasıl Artırılır?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-limiti-nasil-belirlenir",
-      "title": "Mobil Ödeme Limiti Nasıl Belirlenir?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bakiyesi-ay-sonunda-sifirlanir-mi",
-      "title": "Mobil Ödeme Bakiyesi Ay Sonunda Sıfırlanır mı?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bakiyesi-netflix-spotify-kullanilir-mi",
-      "title": "Mobil Ödeme Bakiyesi Netflix veya Spotify'da Kullanılır mı?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bakiyesi-birden-fazla-hatta-mi-tanimlanir",
-      "title": "Mobil Ödeme Bakiyesi Birden Fazla Hatta mı Tanımlanır?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bakiyesi-bozdururken-hangi-ekran-goruntusu-istenir",
-      "title": "Mobil Ödeme Bakiyesi Bozdururken Hangi Ekran Görüntüsü İstenir?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "aile-hattimda-mobil-odeme-bakiyesi-varsa-bozdurabilir-miyim",
-      "title": "Aile Hattımda Mobil Ödeme Bakiyesi Varsa Bozdurabilir miyim?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bakiyesi-yurt-disinda-kullanilir-mi",
-      "title": "Mobil Ödeme Bakiyesi Yurt Dışında Kullanılır mı?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-bozdurma-islemi-neden-reddedilir",
-      "title": "Mobil Ödeme Bozdurma İşlemi Neden Reddedilir?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "mobil-odeme-limitim-ne-kadar-nasil-ogrenirim",
-      "title": "Mobil Ödeme Limitim Ne Kadar? Nasıl Öğrenirim?",
-      "service": "mobil-odeme",
-      "published": false
-    },
-    {
-      "slug": "vodafone-mobil-odeme-limitini-nasil-ogrenirim",
-      "title": "Vodafone Mobil Ödeme Limitini Nasıl Öğrenirim?",
-      "service": "vodafone",
-      "published": false
-    },
-    {
-      "slug": "vodafoneum-uygulamasindan-limit-nasil-gorulur",
-      "title": "Vodafone'um Uygulamasından Mobil Ödeme Limiti Nasıl Görülür?",
-      "service": "vodafone",
-      "published": false
-    },
-    {
-      "slug": "vodafone-mobil-odeme-bakiyesi-faturama-nasil-yansir",
-      "title": "Vodafone Mobil Ödeme Bakiyesi Faturama Nasıl Yansır?",
-      "service": "vodafone",
-      "published": false
-    },
-    {
-      "slug": "vodafone-mobil-odeme-ile-vodafone-pay-ayni-sey-mi",
-      "title": "Vodafone Mobil Ödeme ile Vodafone Pay Aynı Şey mi?",
-      "service": "vodafone",
-      "published": false
-    },
-    {
-      "slug": "vodafone-mobil-odeme-bozdurma-ne-kadar-surede-sonuclanir",
-      "title": "Vodafone Mobil Ödeme Bozdurma Ne Kadar Sürede Sonuçlanır?",
-      "service": "vodafone",
-      "published": false
-    },
-    {
-      "slug": "turk-telekom-mobil-odeme-limitini-nasil-ogrenirim",
-      "title": "Türk Telekom Mobil Ödeme Limitini Nasıl Öğrenirim?",
-      "service": "turk-telekom",
-      "published": false
-    },
-    {
-      "slug": "turktelekomum-uygulamasindan-limit-nasil-gorulur",
-      "title": "Türk Telekom'um Uygulamasından Mobil Ödeme Limiti Nasıl Görülür?",
-      "service": "turk-telekom",
-      "published": false
-    },
-    {
-      "slug": "turk-telekom-mobil-odeme-bakiyesi-faturama-nasil-yansir",
-      "title": "Türk Telekom Mobil Ödeme Bakiyesi Faturama Nasıl Yansır?",
-      "service": "turk-telekom",
-      "published": false
-    },
-    {
-      "slug": "turk-telekom-mobil-odeme-bozdurma-ne-kadar-surede-sonuclanir",
-      "title": "Türk Telekom Mobil Ödeme Bozdurma Ne Kadar Sürede Sonuçlanır?",
-      "service": "turk-telekom",
-      "published": false
-    },
-    {
-      "slug": "bozum-yaparken-whatsapp-disinda-platform-guvenilir-mi",
-      "title": "Bozum Yaparken WhatsApp Dışında Bir Platform Güvenilir mi?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-oranlari-neden-hizmetten-hizmete-degisir",
-      "title": "Bozum Oranları Neden Hizmetten Hizmete Değişir?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-isleminde-hesabima-erisim-veriyor-muyum",
-      "title": "Bozum İşleminde Hesabıma Erişim Veriyor muyum?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-islemi-ne-zaman-tamamlanir-surec-nasil-isler",
-      "title": "Bozum İşlemi Ne Zaman Tamamlanır, Süreç Nasıl İşler?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "sms-dogrulama-kodu-isteyen-kisilere-dikkat",
-      "title": "Bozum Yaparken SMS Doğrulama Kodu İsteyen Kişilere Dikkat",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "gece-yarisi-bozum-yapilir-mi-calisma-saatleri",
-      "title": "Gece Yarısı Bozum Yapılır mı? Çalışma Saatleri Rehberi",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-hizmetinde-uyelik-veya-form-gerekir-mi",
-      "title": "Bozum Hizmetinde Üyelik veya Form Gerekir mi?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "kod-tabanli-bakiye-tabanli-bozum-farki",
-      "title": "Kod Tabanlı ve Bakiye Tabanlı Bozum Arasındaki Fark",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-yaparken-en-sik-yapilan-hatalar",
-      "title": "Bozum Yaparken En Sık Yapılan 7 Hata",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "resmi-bozum-hattini-sahte-hesaplardan-ayirt-etme",
-      "title": "Resmi Bozum Hattını Sahte Hesaplardan Nasıl Ayırt Edersin?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-yaparken-hangi-bilgileri-asla-paylasmamalisin",
-      "title": "Bozum Yaparken Hangi Bilgileri Asla Paylaşmamalısın?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-islemi-iptal-edilebilir-mi",
-      "title": "Bozum İşlemi İptal Edilebilir mi?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-yaparken-ekran-goruntusu-nasil-dogru-cekilir",
-      "title": "Bozum Yaparken Ekran Görüntüsü Nasıl Doğru Çekilir?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-orani-neden-farkli-cikabilir",
-      "title": "Bozum Oranı Neden Sitedekiyle WhatsApp'takinden Farklı Çıkabilir?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-yaptiktan-sonra-odeme-gelmezse-ne-yapmaliyim",
-      "title": "Bozum Yaptıktan Sonra Ödeme Gelmezse Ne Yapmalıyım?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-sitesi-secerken-nelere-dikkat-etmeli",
-      "title": "Bozum Sitesi Seçerken Nelere Dikkat Etmeli?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "bozum-islemi-icin-yas-siniri-var-mi",
-      "title": "Bozum İşlemi için Yaş Sınırı Var mı?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "ogrenciler-bozum-hizmetinden-nasil-yararlanir",
-      "title": "Öğrenciler Bozum Hizmetinden Nasıl Yararlanır?",
-      "service": "genel",
-      "published": false
-    },
-    {
-      "slug": "pokus-bakiyesi-bozdurmadan-once-kontrol",
-      "title": "Pokus Bakiyesi Bozdurmadan Önce Kontrol Etmen Gerekenler",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-ile-mobil-odeme-arasindaki-fark",
-      "title": "Pokus ile Mobil Ödeme Arasındaki Fark Nedir?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "kullanilmayan-pokus-bakiyesini-degerlendirme",
-      "title": "Kullanılmayan Pokus Bakiyesini Değerlendirmenin Yolları",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-bakiye-ekran-goruntusu-nasil-paylasilir",
-      "title": "Pokus Bakiye Ekran Görüntüsü Nasıl Doğru Paylaşılır?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-bakiyesi-kismi-bozdurulabilir-mi",
-      "title": "Pokus Bakiyesi Kısmi Olarak Bozdurulabilir mi?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-hesabima-erisim-veriyor-muyum",
-      "title": "Pokus Bozdururken Hesabıma Erişim Veriyor muyum?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-bakiyesi-ile-oyun-ici-satin-alma-rehberi",
-      "title": "Pokus Bakiyesi ile Oyun İçi Satın Alma Rehberi",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-bakiyesi-nasil-yuklenir",
-      "title": "Pokus Bakiyesi Nasıl Yüklenir?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-hangi-oyunlarda-kullanilir",
-      "title": "Pokus Hangi Oyunlarda Kullanılır?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-bakiyesi-suresi-doluyor-mu",
-      "title": "Pokus Bakiyesinin Süresi Doluyor mu?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-hesabim-kilitliyse-bakiyemi-bozdurabilir-miyim",
-      "title": "Pokus Hesabım Kilitliyse Bakiyemi Bozdurabilir miyim?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-ile-razer-gold-arasindaki-fark-nedir",
-      "title": "Pokus ile Razer Gold Arasındaki Fark Nedir?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-bakiyesini-yanlis-hesaba-yukledim-ne-yapmaliyim",
-      "title": "Pokus Bakiyesini Yanlış Hesaba Yükledim, Ne Yapmalıyım?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-bozdurma-islemi-ne-kadar-guvenli",
-      "title": "Pokus Bozdurma İşlemi Ne Kadar Güvenli?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-bakiyesi-bozdururken-ekran-goruntusu-nasil-alinir",
-      "title": "Pokus Bakiyesi Bozdururken Ekran Görüntüsü Nasıl Alınır?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-hediye-bakiyesi-bozdurulur-mu",
-      "title": "Pokus Hediye Bakiyesi Bozdurulur mu?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "pokus-bozdurma-sik-yapilan-hatalar",
-      "title": "Pokus Bozdurma İşleminde Sık Yapılan Hatalar Nelerdir?",
-      "service": "pokus",
-      "published": false
-    },
-    {
-      "slug": "paycell-bakiyesi-bozdurmanin-guvenli-yolu",
-      "title": "Paycell Bakiyesi Bozdurmanın Güvenli Yolu",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "turkcell-hatti-olmayanlar-paycell-bozdurabilir-mi",
-      "title": "Turkcell Hattı Olmayanlar Paycell Bakiyesi Bozdurabilir mi?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-hediye-bakiyesi-bozdurulur-mu",
-      "title": "Paycell Hediye Bakiyesi Bozdurulur mu?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-bakiyesi-ile-fatura-odemesi-farki",
-      "title": "Paycell Bakiyesi ile Fatura Ödemesi Arasındaki Fark",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-bakiyesini-kismi-bozdurmanin-avantajlari",
-      "title": "Paycell Bakiyesini Kısmi Bozdurmanın Avantajları",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-bozdururken-sik-yapilan-hatalar",
-      "title": "Paycell Bakiyesi Bozdururken Sık Yapılan Hatalar",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-mi-mobil-odeme-mi-hangisini-secmeli",
-      "title": "Paycell mi Mobil Ödeme mi? Hangisini Seçmeliyim?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-cuzdanima-nasil-bakiye-yuklerim",
-      "title": "Paycell Cüzdanıma Nasıl Bakiye Yüklerim?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-kart-bakiyesi-ile-cuzdan-bakiyesi-ayni-mi",
-      "title": "Paycell Kart Bakiyesi ile Cüzdan Bakiyesi Aynı mı?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-bakiyemi-nereden-gorebilirim",
-      "title": "Paycell Bakiyemi Nereden Görebilirim?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-bozdurma-islemi-kac-adimda-tamamlanir",
-      "title": "Paycell Bozdurma İşlemi Kaç Adımda Tamamlanır?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-bakiyesi-ile-online-alisveris-yapilir-mi",
-      "title": "Paycell Bakiyesi ile Online Alışveriş Yapılır mı?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-hesabim-pasifse-bakiyemi-bozdurabilir-miyim",
-      "title": "Paycell Hesabım Pasifse Bakiyemi Bozdurabilir miyim?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-bakiyesi-bozdururken-hangi-bilgiler-istenir",
-      "title": "Paycell Bakiyesi Bozdururken Hangi Bilgiler İstenir?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "paycell-kart-mi-cuzdan-mi-hangisi-avantajli",
-      "title": "Paycell Kart mı Cüzdan mı, Hangisi Daha Avantajlı?",
-      "service": "paycell",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodu-bolgeye-ozel-mi",
-      "title": "Razer Gold Kodu Bölgeye Özel mi? Bilmen Gerekenler",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-hediye-karti-geldi-ne-yapmaliyim",
-      "title": "Razer Gold Hediye Kartı Geldi, Ne Yapmalıyım?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodu-bozdurmadan-once-bilmen-gerekenler",
-      "title": "Razer Gold Kodu Bozdurmadan Önce Bilmen Gereken 5 Şey",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-pin-kodu-paylasirken-guvenlik",
-      "title": "Razer Gold PIN Kodu Paylaşırken Güvenlik Önlemleri",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kod-bozdurma-ile-kod-satisi-farki",
-      "title": "Razer Gold Kod Bozdurma ile Kod Satışı Arasındaki Fark",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "birden-fazla-razer-gold-kodu-tek-seferde",
-      "title": "Birden Fazla Razer Gold Kodu Nasıl Tek Seferde Bozdurulur?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodu-tam-deger-uzerinden-mi-bozdurulur",
-      "title": "Razer Gold Kodu Neden Tam Değeri Üzerinden Bozdurulur?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodu-ne-zaman-kullanilmali-suresi-dolar-mi",
-      "title": "Razer Gold Kodu Ne Zaman Kullanılmalı, Süresi Dolar mı?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodunu-kaybedersem-ne-olur",
-      "title": "Razer Gold Kodunu Kaybedersem Ne Olur?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodu-ekran-goruntusuyle-mi-yaziyla-mi-paylasilmali",
-      "title": "Razer Gold Kodu Ekran Görüntüsüyle mi Yazıyla mı Paylaşılmalı?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodu-hangi-ulkelerde-gecerli",
-      "title": "Razer Gold Kodu Hangi Ülkelerde Geçerli?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodunu-hesabima-yuklemeden-bozdurabilir-miyim",
-      "title": "Razer Gold Kodunu Oyun Hesabıma Yüklemeden Bozdurabilir miyim?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodu-sahte-mi-gercek-mi-nasil-anlarim",
-      "title": "Razer Gold Kodu Sahte mi Gerçek mi Nasıl Anlarım?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodu-nereden-satin-alinir",
-      "title": "Razer Gold Kodu Nereden Satın Alınır?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "steam-kodu-ile-razer-gold-kodu-farki",
-      "title": "Steam Kodu ile Razer Gold Kodu Aynı mı, Farkı Ne?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodunu-hediye-aldim-nasil-bozdururum",
-      "title": "Razer Gold Kodunu Arkadaşımdan Hediye Aldım, Nasıl Bozdururum?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-bozdururken-en-sik-sorulan-sorular",
-      "title": "Razer Gold Kodu Bozdururken En Sık Sorulan Sorular",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-bozdurma-islemi-neden-reddedilir",
-      "title": "Razer Gold Kodu Bozdurma İşlemi Neden Reddedilir?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "razer-gold-kodunun-degerini-nasil-ogrenirim",
-      "title": "Razer Gold Kodunun Değerini Nasıl Öğrenirim?",
-      "service": "razer-gold",
-      "published": false
-    },
-    {
-      "slug": "itunes-kodu-bolgeye-ozel-mi",
-      "title": "iTunes Kodu Bölgeye Özel mi? Dikkat Edilmesi Gerekenler",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "kullanilmayan-itunes-bakiyesini-nakde-cevirme",
-      "title": "Kullanılmayan iTunes Bakiyesini Nakde Çevirmenin Yolu",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-kodu-bozdurmadan-once-kontrol-listesi",
-      "title": "iTunes Kodu Bozdurmadan Önce Kontrol Listesi",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-bakiyesi-ile-apple-music-app-store-harcamalari",
-      "title": "iTunes Bakiyesi ile Apple Music ve App Store Harcamaları",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-kodu-kullanilmissa-ne-olur",
-      "title": "iTunes Kodu Kullanılmışsa Ne Olur?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "birden-fazla-itunes-kodu-ayni-anda-bozdurulur-mu",
-      "title": "Birden Fazla iTunes Kodu Aynı Anda Bozdurulur mu?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-kodu-turk-lirasi-mi-dolar-mi-olur",
-      "title": "iTunes Kodu Türk Lirası mı Dolar mı Olur?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-hediye-karti-nereden-satin-alinir",
-      "title": "iTunes Hediye Kartı Nereden Satın Alınır?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-kodu-apple-idye-yuklemeden-bozdurulur-mu",
-      "title": "iTunes Kodu Apple ID'ye Yüklemeden Bozdurulur mu?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-kodu-suresi-dolar-mi",
-      "title": "iTunes Kodunun Süresi Dolar mı?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-kodu-ile-app-store-hediye-karti-ayni-mi",
-      "title": "iTunes Kodu ile App Store Hediye Kartı Aynı mı?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-kodunu-yanlislikla-hesabima-yukledim-ne-olur",
-      "title": "iTunes Kodunu Yanlışlıkla Hesabıma Yükledim, Ne Olur?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-kodu-bozdururken-fotograf-mi-yazi-mi-paylasmali",
-      "title": "iTunes Kodu Bozdururken Fotoğraf mı Yazı mı Paylaşmalıyım?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "android-kullanicilari-itunes-kodu-bozdurabilir-mi",
-      "title": "Android Kullanıcıları iTunes Kodu Bozdurabilir mi?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-kodu-sahte-mi-gercek-mi-nasil-anlarim",
-      "title": "iTunes Kodu Sahte mi Gerçek mi Nasıl Anlarım?",
-      "service": "itunes",
-      "published": false
-    },
-    {
-      "slug": "itunes-bozdurma-islemi-neden-reddedilir",
-      "title": "iTunes Kodu Bozdurma İşlemi Neden Reddedilir?",
-      "service": "itunes",
-      "published": false
-    }
-  ]
+ "_readme": "Otomatik günlük blog yayın kuyruğu. Her satır bir makale konusudur. published=false olanlar sırayla (listelenme sırasına göre) yayınlanır; sıra = yayın önceliğidir ve GSC arama verisine göre yeniden sıralanabilir (13.08.2026: temel/pillar konular öne alındı). Bir konu yayınlandığında published=true yapılır ve published_date (YYYY-MM-DD, Europe/Istanbul) eklenir. Günde en fazla 1 makale yayınlanır. Yeni konu eklerken listenin uygun öncelik noktasına ekle; mevcut kayıtların slug/alanlarını değiştirme.",
+ "topics": [
+  {
+   "slug": "razer-gold-kodu-nasil-bozdurulur-adim-adim",
+   "title": "Razer Gold Kodu Nasıl Bozdurulur? Adım Adım Rehber",
+   "service": "razer-gold",
+   "published": true,
+   "published_date": "2026-08-11"
+  },
+  {
+   "slug": "razer-gold-kodu-kullanilmissa-ne-olur",
+   "title": "Razer Gold Kodu Kullanılmışsa Ne Olur?",
+   "service": "razer-gold",
+   "published": true,
+   "published_date": "2026-08-13"
+  },
+  {
+   "slug": "itunes-bakiyesi-nedir-nereden-elde-edilir",
+   "title": "iTunes Bakiyesi Nedir, Nereden Elde Edilir?",
+   "service": "itunes",
+   "published": true,
+   "published_date": "2026-08-12"
+  },
+  {
+   "slug": "bozum-islemi-nedir-yeni-baslayanlar-icin",
+   "title": "Bozum İşlemi Nedir, Nasıl Çalışır? (Yeni Başlayanlar İçin)",
+   "service": "genel",
+   "published": true,
+   "published_date": "2026-08-14"
+  },
+  {
+   "slug": "mobil-odeme-nakite-nasil-cevrilir",
+   "title": "Mobil Ödeme Bakiyesi Nakite Nasıl Çevrilir?",
+   "service": "mobil-odeme",
+   "published": true,
+   "published_date": "2026-08-15"
+  },
+  {
+   "slug": "mobil-odeme-bakiyesi-nedir-nasil-olusur",
+   "title": "Mobil Ödeme Bakiyesi Nedir, Nasıl Oluşur?",
+   "service": "mobil-odeme",
+   "published": true,
+   "published_date": "2026-08-16"
+  },
+  {
+   "slug": "vodafone-mobil-odeme-bozdurma-adim-adim",
+   "title": "Vodafone Mobil Ödeme Bozdurma Adım Adım Nasıl Yapılır?",
+   "service": "vodafone",
+   "published": true,
+   "published_date": "2026-08-17"
+  },
+  {
+   "slug": "turk-telekom-mobil-odeme-bozdurma-adim-adim",
+   "title": "Türk Telekom Mobil Ödeme Bozdurma Adım Adım Nasıl Yapılır?",
+   "service": "turk-telekom",
+   "published": true,
+   "published_date": "2026-08-18"
+  },
+  {
+   "slug": "mobil-odeme-bozdurma-yasal-mi",
+   "title": "Mobil Ödeme Bozdurma Yasal mı? Merak Edilenler ve Gerçekler",
+   "service": "genel",
+   "published": true,
+   "published_date": "2026-08-13"
+  },
+  {
+   "slug": "en-guvenilir-mobil-odeme-bozdurma-nasil-secilir",
+   "title": "En Güvenilir Mobil Ödeme Bozdurma Sitesi Nasıl Seçilir?",
+   "service": "mobil-odeme",
+   "published": true,
+   "published_date": "2026-08-19"
+  },
+  {
+   "slug": "sms-bozum-nedir-timsahbozumda-sms-ile-islem-var-mi",
+   "title": "SMS Bozum Nedir? TimsahBozum'da SMS ile İşlem Yapılır mı?",
+   "service": "genel",
+   "published": true,
+   "published_date": "2026-08-20"
+  },
+  {
+   "slug": "mobil-bozum-yorumlari-nelere-dikkat-etmeli",
+   "title": "Mobil Bozum Yorumları: Kullanıcı Yorumlarını Okurken Nelere Dikkat Etmeli?",
+   "service": "genel",
+   "published": true,
+   "published_date": "2026-08-21"
+  },
+  {
+   "slug": "nakit-bozum-nedir-nasil-calisir",
+   "title": "Nakit Bozum Nedir, Nasıl Çalışır?",
+   "service": "genel",
+   "published": true,
+   "published_date": "2026-08-22"
+  },
+  {
+   "slug": "mobil-odeme-limiti-nasil-artirilir",
+   "title": "Mobil Ödeme Limiti Nasıl Artırılır?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "fatura-bozum-nedir",
+   "title": "Fatura Bozum Nedir?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bozdurmada-odeme-nasil-tahsil-edilir",
+   "title": "Mobil Ödeme Bozdurmada Ödemeni Nasıl Alırsın? IBAN ile Tahsilat",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bozdurma-komisyon-oranlari-nasil-belirlenir",
+   "title": "Mobil Ödeme Bozdurma Komisyon Oranları Nasıl Belirlenir?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-limit-bozum-nedir",
+   "title": "Mobil Ödeme Limit Bozum Nedir? Limitin Tamamı Bozdurulur mu?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bozdurma-kredi-notunu-etkiler-mi",
+   "title": "Mobil Ödeme Bozdurma Kredi Notunu Etkiler mi?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "hangi-operatorlerde-mobil-odeme-bozdurma-yapiliyor",
+   "title": "Hangi Operatörlerde Mobil Ödeme Bozdurma Yapılıyor?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "turkcell-mobil-odeme-bozdurma-ne-zaman-aktif",
+   "title": "Turkcell Mobil Ödeme Bozdurma Ne Zaman Aktif Olacak?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "pokus-bakiyesi-nedir-nasil-olusur",
+   "title": "Pokus Bakiyesi Nedir, Nasıl Oluşur?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "paycell-bakiyesi-nasil-olusur-nereden-gelir",
+   "title": "Paycell Bakiyesi Nasıl Oluşur, Nereden Gelir?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "itunes-hediye-karti-kodu-nasil-bozdurulur",
+   "title": "iTunes Hediye Kartı Kodu Nasıl Bozdurulur?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodunu-guvenle-bozdurmanin-yollari",
+   "title": "Razer Gold Kodunu Güvenle Bozdurmanın Yolları",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "ilk-kez-bozum-yapacaklar-icin-kapsamli-rehber",
+   "title": "İlk Kez Bozum Yapacaklar İçin Kapsamlı Rehber",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "acil-nakit-ihtiyacinda-mobil-odeme-bozdurma",
+   "title": "Acil Nakit İhtiyacında Mobil Ödeme Bozdurma",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "faturali-faturasiz-hatlarda-mobil-odeme-farki",
+   "title": "Faturalı ve Faturasız Hatlarda Mobil Ödeme Bozdurma Farkı",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bakiyesi-ile-kontor-bakiyesi-karistirilir-mi",
+   "title": "Mobil Ödeme Bakiyesi ile Kontör Bakiyesi Karıştırılır mı?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bakiyesi-google-playde-nasil-kullanilir",
+   "title": "Mobil Ödeme Bakiyesi Google Play'de Nasıl Kullanılır?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bozdurma-kontor-bozdurma-ayni-mi",
+   "title": "Mobil Ödeme Bozdurma ile Kontör Bozdurma Aynı Şey mi?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bakiyesi-kismi-bozdurulabilir-mi",
+   "title": "Mobil Ödeme Bakiyesi Kısmi Bozdurulabilir mi?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-limitim-neden-kapali-nasil-acilir",
+   "title": "Mobil Ödeme Limitim Neden Kapalı, Nasıl Açılır?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-limiti-nasil-belirlenir",
+   "title": "Mobil Ödeme Limiti Nasıl Belirlenir?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bakiyesi-ay-sonunda-sifirlanir-mi",
+   "title": "Mobil Ödeme Bakiyesi Ay Sonunda Sıfırlanır mı?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bakiyesi-netflix-spotify-kullanilir-mi",
+   "title": "Mobil Ödeme Bakiyesi Netflix veya Spotify'da Kullanılır mı?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bakiyesi-birden-fazla-hatta-mi-tanimlanir",
+   "title": "Mobil Ödeme Bakiyesi Birden Fazla Hatta mı Tanımlanır?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bakiyesi-bozdururken-hangi-ekran-goruntusu-istenir",
+   "title": "Mobil Ödeme Bakiyesi Bozdururken Hangi Ekran Görüntüsü İstenir?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "aile-hattimda-mobil-odeme-bakiyesi-varsa-bozdurabilir-miyim",
+   "title": "Aile Hattımda Mobil Ödeme Bakiyesi Varsa Bozdurabilir miyim?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bakiyesi-yurt-disinda-kullanilir-mi",
+   "title": "Mobil Ödeme Bakiyesi Yurt Dışında Kullanılır mı?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-bozdurma-islemi-neden-reddedilir",
+   "title": "Mobil Ödeme Bozdurma İşlemi Neden Reddedilir?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "mobil-odeme-limitim-ne-kadar-nasil-ogrenirim",
+   "title": "Mobil Ödeme Limitim Ne Kadar? Nasıl Öğrenirim?",
+   "service": "mobil-odeme",
+   "published": false
+  },
+  {
+   "slug": "vodafone-mobil-odeme-limitini-nasil-ogrenirim",
+   "title": "Vodafone Mobil Ödeme Limitini Nasıl Öğrenirim?",
+   "service": "vodafone",
+   "published": false
+  },
+  {
+   "slug": "vodafoneum-uygulamasindan-limit-nasil-gorulur",
+   "title": "Vodafone'um Uygulamasından Mobil Ödeme Limiti Nasıl Görülür?",
+   "service": "vodafone",
+   "published": false
+  },
+  {
+   "slug": "vodafone-mobil-odeme-bakiyesi-faturama-nasil-yansir",
+   "title": "Vodafone Mobil Ödeme Bakiyesi Faturama Nasıl Yansır?",
+   "service": "vodafone",
+   "published": false
+  },
+  {
+   "slug": "vodafone-mobil-odeme-ile-vodafone-pay-ayni-sey-mi",
+   "title": "Vodafone Mobil Ödeme ile Vodafone Pay Aynı Şey mi?",
+   "service": "vodafone",
+   "published": false
+  },
+  {
+   "slug": "vodafone-mobil-odeme-bozdurma-ne-kadar-surede-sonuclanir",
+   "title": "Vodafone Mobil Ödeme Bozdurma Ne Kadar Sürede Sonuçlanır?",
+   "service": "vodafone",
+   "published": false
+  },
+  {
+   "slug": "turk-telekom-mobil-odeme-limitini-nasil-ogrenirim",
+   "title": "Türk Telekom Mobil Ödeme Limitini Nasıl Öğrenirim?",
+   "service": "turk-telekom",
+   "published": false
+  },
+  {
+   "slug": "turktelekomum-uygulamasindan-limit-nasil-gorulur",
+   "title": "Türk Telekom'um Uygulamasından Mobil Ödeme Limiti Nasıl Görülür?",
+   "service": "turk-telekom",
+   "published": false
+  },
+  {
+   "slug": "turk-telekom-mobil-odeme-bakiyesi-faturama-nasil-yansir",
+   "title": "Türk Telekom Mobil Ödeme Bakiyesi Faturama Nasıl Yansır?",
+   "service": "turk-telekom",
+   "published": false
+  },
+  {
+   "slug": "turk-telekom-mobil-odeme-bozdurma-ne-kadar-surede-sonuclanir",
+   "title": "Türk Telekom Mobil Ödeme Bozdurma Ne Kadar Sürede Sonuçlanır?",
+   "service": "turk-telekom",
+   "published": false
+  },
+  {
+   "slug": "bozum-yaparken-whatsapp-disinda-platform-guvenilir-mi",
+   "title": "Bozum Yaparken WhatsApp Dışında Bir Platform Güvenilir mi?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-oranlari-neden-hizmetten-hizmete-degisir",
+   "title": "Bozum Oranları Neden Hizmetten Hizmete Değişir?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-isleminde-hesabima-erisim-veriyor-muyum",
+   "title": "Bozum İşleminde Hesabıma Erişim Veriyor muyum?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-islemi-ne-zaman-tamamlanir-surec-nasil-isler",
+   "title": "Bozum İşlemi Ne Zaman Tamamlanır, Süreç Nasıl İşler?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "sms-dogrulama-kodu-isteyen-kisilere-dikkat",
+   "title": "Bozum Yaparken SMS Doğrulama Kodu İsteyen Kişilere Dikkat",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "gece-yarisi-bozum-yapilir-mi-calisma-saatleri",
+   "title": "Gece Yarısı Bozum Yapılır mı? Çalışma Saatleri Rehberi",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-hizmetinde-uyelik-veya-form-gerekir-mi",
+   "title": "Bozum Hizmetinde Üyelik veya Form Gerekir mi?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "kod-tabanli-bakiye-tabanli-bozum-farki",
+   "title": "Kod Tabanlı ve Bakiye Tabanlı Bozum Arasındaki Fark",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-yaparken-en-sik-yapilan-hatalar",
+   "title": "Bozum Yaparken En Sık Yapılan 7 Hata",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "resmi-bozum-hattini-sahte-hesaplardan-ayirt-etme",
+   "title": "Resmi Bozum Hattını Sahte Hesaplardan Nasıl Ayırt Edersin?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-yaparken-hangi-bilgileri-asla-paylasmamalisin",
+   "title": "Bozum Yaparken Hangi Bilgileri Asla Paylaşmamalısın?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-islemi-iptal-edilebilir-mi",
+   "title": "Bozum İşlemi İptal Edilebilir mi?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-yaparken-ekran-goruntusu-nasil-dogru-cekilir",
+   "title": "Bozum Yaparken Ekran Görüntüsü Nasıl Doğru Çekilir?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-orani-neden-farkli-cikabilir",
+   "title": "Bozum Oranı Neden Sitedekiyle WhatsApp'takinden Farklı Çıkabilir?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-yaptiktan-sonra-odeme-gelmezse-ne-yapmaliyim",
+   "title": "Bozum Yaptıktan Sonra Ödeme Gelmezse Ne Yapmalıyım?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-sitesi-secerken-nelere-dikkat-etmeli",
+   "title": "Bozum Sitesi Seçerken Nelere Dikkat Etmeli?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "bozum-islemi-icin-yas-siniri-var-mi",
+   "title": "Bozum İşlemi için Yaş Sınırı Var mı?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "ogrenciler-bozum-hizmetinden-nasil-yararlanir",
+   "title": "Öğrenciler Bozum Hizmetinden Nasıl Yararlanır?",
+   "service": "genel",
+   "published": false
+  },
+  {
+   "slug": "pokus-bakiyesi-bozdurmadan-once-kontrol",
+   "title": "Pokus Bakiyesi Bozdurmadan Önce Kontrol Etmen Gerekenler",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-ile-mobil-odeme-arasindaki-fark",
+   "title": "Pokus ile Mobil Ödeme Arasındaki Fark Nedir?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "kullanilmayan-pokus-bakiyesini-degerlendirme",
+   "title": "Kullanılmayan Pokus Bakiyesini Değerlendirmenin Yolları",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-bakiye-ekran-goruntusu-nasil-paylasilir",
+   "title": "Pokus Bakiye Ekran Görüntüsü Nasıl Doğru Paylaşılır?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-bakiyesi-kismi-bozdurulabilir-mi",
+   "title": "Pokus Bakiyesi Kısmi Olarak Bozdurulabilir mi?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-hesabima-erisim-veriyor-muyum",
+   "title": "Pokus Bozdururken Hesabıma Erişim Veriyor muyum?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-bakiyesi-ile-oyun-ici-satin-alma-rehberi",
+   "title": "Pokus Bakiyesi ile Oyun İçi Satın Alma Rehberi",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-bakiyesi-nasil-yuklenir",
+   "title": "Pokus Bakiyesi Nasıl Yüklenir?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-hangi-oyunlarda-kullanilir",
+   "title": "Pokus Hangi Oyunlarda Kullanılır?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-bakiyesi-suresi-doluyor-mu",
+   "title": "Pokus Bakiyesinin Süresi Doluyor mu?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-hesabim-kilitliyse-bakiyemi-bozdurabilir-miyim",
+   "title": "Pokus Hesabım Kilitliyse Bakiyemi Bozdurabilir miyim?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-ile-razer-gold-arasindaki-fark-nedir",
+   "title": "Pokus ile Razer Gold Arasındaki Fark Nedir?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-bakiyesini-yanlis-hesaba-yukledim-ne-yapmaliyim",
+   "title": "Pokus Bakiyesini Yanlış Hesaba Yükledim, Ne Yapmalıyım?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-bozdurma-islemi-ne-kadar-guvenli",
+   "title": "Pokus Bozdurma İşlemi Ne Kadar Güvenli?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-bakiyesi-bozdururken-ekran-goruntusu-nasil-alinir",
+   "title": "Pokus Bakiyesi Bozdururken Ekran Görüntüsü Nasıl Alınır?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-hediye-bakiyesi-bozdurulur-mu",
+   "title": "Pokus Hediye Bakiyesi Bozdurulur mu?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "pokus-bozdurma-sik-yapilan-hatalar",
+   "title": "Pokus Bozdurma İşleminde Sık Yapılan Hatalar Nelerdir?",
+   "service": "pokus",
+   "published": false
+  },
+  {
+   "slug": "paycell-bakiyesi-bozdurmanin-guvenli-yolu",
+   "title": "Paycell Bakiyesi Bozdurmanın Güvenli Yolu",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "turkcell-hatti-olmayanlar-paycell-bozdurabilir-mi",
+   "title": "Turkcell Hattı Olmayanlar Paycell Bakiyesi Bozdurabilir mi?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-hediye-bakiyesi-bozdurulur-mu",
+   "title": "Paycell Hediye Bakiyesi Bozdurulur mu?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-bakiyesi-ile-fatura-odemesi-farki",
+   "title": "Paycell Bakiyesi ile Fatura Ödemesi Arasındaki Fark",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-bakiyesini-kismi-bozdurmanin-avantajlari",
+   "title": "Paycell Bakiyesini Kısmi Bozdurmanın Avantajları",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-bozdururken-sik-yapilan-hatalar",
+   "title": "Paycell Bakiyesi Bozdururken Sık Yapılan Hatalar",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-mi-mobil-odeme-mi-hangisini-secmeli",
+   "title": "Paycell mi Mobil Ödeme mi? Hangisini Seçmeliyim?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-cuzdanima-nasil-bakiye-yuklerim",
+   "title": "Paycell Cüzdanıma Nasıl Bakiye Yüklerim?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-kart-bakiyesi-ile-cuzdan-bakiyesi-ayni-mi",
+   "title": "Paycell Kart Bakiyesi ile Cüzdan Bakiyesi Aynı mı?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-bakiyemi-nereden-gorebilirim",
+   "title": "Paycell Bakiyemi Nereden Görebilirim?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-bozdurma-islemi-kac-adimda-tamamlanir",
+   "title": "Paycell Bozdurma İşlemi Kaç Adımda Tamamlanır?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-bakiyesi-ile-online-alisveris-yapilir-mi",
+   "title": "Paycell Bakiyesi ile Online Alışveriş Yapılır mı?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-hesabim-pasifse-bakiyemi-bozdurabilir-miyim",
+   "title": "Paycell Hesabım Pasifse Bakiyemi Bozdurabilir miyim?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-bakiyesi-bozdururken-hangi-bilgiler-istenir",
+   "title": "Paycell Bakiyesi Bozdururken Hangi Bilgiler İstenir?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "paycell-kart-mi-cuzdan-mi-hangisi-avantajli",
+   "title": "Paycell Kart mı Cüzdan mı, Hangisi Daha Avantajlı?",
+   "service": "paycell",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodu-bolgeye-ozel-mi",
+   "title": "Razer Gold Kodu Bölgeye Özel mi? Bilmen Gerekenler",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-hediye-karti-geldi-ne-yapmaliyim",
+   "title": "Razer Gold Hediye Kartı Geldi, Ne Yapmalıyım?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodu-bozdurmadan-once-bilmen-gerekenler",
+   "title": "Razer Gold Kodu Bozdurmadan Önce Bilmen Gereken 5 Şey",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-pin-kodu-paylasirken-guvenlik",
+   "title": "Razer Gold PIN Kodu Paylaşırken Güvenlik Önlemleri",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kod-bozdurma-ile-kod-satisi-farki",
+   "title": "Razer Gold Kod Bozdurma ile Kod Satışı Arasındaki Fark",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "birden-fazla-razer-gold-kodu-tek-seferde",
+   "title": "Birden Fazla Razer Gold Kodu Nasıl Tek Seferde Bozdurulur?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodu-tam-deger-uzerinden-mi-bozdurulur",
+   "title": "Razer Gold Kodu Neden Tam Değeri Üzerinden Bozdurulur?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodu-ne-zaman-kullanilmali-suresi-dolar-mi",
+   "title": "Razer Gold Kodu Ne Zaman Kullanılmalı, Süresi Dolar mı?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodunu-kaybedersem-ne-olur",
+   "title": "Razer Gold Kodunu Kaybedersem Ne Olur?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodu-ekran-goruntusuyle-mi-yaziyla-mi-paylasilmali",
+   "title": "Razer Gold Kodu Ekran Görüntüsüyle mi Yazıyla mı Paylaşılmalı?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodu-hangi-ulkelerde-gecerli",
+   "title": "Razer Gold Kodu Hangi Ülkelerde Geçerli?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodunu-hesabima-yuklemeden-bozdurabilir-miyim",
+   "title": "Razer Gold Kodunu Oyun Hesabıma Yüklemeden Bozdurabilir miyim?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodu-sahte-mi-gercek-mi-nasil-anlarim",
+   "title": "Razer Gold Kodu Sahte mi Gerçek mi Nasıl Anlarım?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodu-nereden-satin-alinir",
+   "title": "Razer Gold Kodu Nereden Satın Alınır?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "steam-kodu-ile-razer-gold-kodu-farki",
+   "title": "Steam Kodu ile Razer Gold Kodu Aynı mı, Farkı Ne?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodunu-hediye-aldim-nasil-bozdururum",
+   "title": "Razer Gold Kodunu Arkadaşımdan Hediye Aldım, Nasıl Bozdururum?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-bozdururken-en-sik-sorulan-sorular",
+   "title": "Razer Gold Kodu Bozdururken En Sık Sorulan Sorular",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-bozdurma-islemi-neden-reddedilir",
+   "title": "Razer Gold Kodu Bozdurma İşlemi Neden Reddedilir?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "razer-gold-kodunun-degerini-nasil-ogrenirim",
+   "title": "Razer Gold Kodunun Değerini Nasıl Öğrenirim?",
+   "service": "razer-gold",
+   "published": false
+  },
+  {
+   "slug": "itunes-kodu-bolgeye-ozel-mi",
+   "title": "iTunes Kodu Bölgeye Özel mi? Dikkat Edilmesi Gerekenler",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "kullanilmayan-itunes-bakiyesini-nakde-cevirme",
+   "title": "Kullanılmayan iTunes Bakiyesini Nakde Çevirmenin Yolu",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-kodu-bozdurmadan-once-kontrol-listesi",
+   "title": "iTunes Kodu Bozdurmadan Önce Kontrol Listesi",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-bakiyesi-ile-apple-music-app-store-harcamalari",
+   "title": "iTunes Bakiyesi ile Apple Music ve App Store Harcamaları",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-kodu-kullanilmissa-ne-olur",
+   "title": "iTunes Kodu Kullanılmışsa Ne Olur?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "birden-fazla-itunes-kodu-ayni-anda-bozdurulur-mu",
+   "title": "Birden Fazla iTunes Kodu Aynı Anda Bozdurulur mu?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-kodu-turk-lirasi-mi-dolar-mi-olur",
+   "title": "iTunes Kodu Türk Lirası mı Dolar mı Olur?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-hediye-karti-nereden-satin-alinir",
+   "title": "iTunes Hediye Kartı Nereden Satın Alınır?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-kodu-apple-idye-yuklemeden-bozdurulur-mu",
+   "title": "iTunes Kodu Apple ID'ye Yüklemeden Bozdurulur mu?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-kodu-suresi-dolar-mi",
+   "title": "iTunes Kodunun Süresi Dolar mı?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-kodu-ile-app-store-hediye-karti-ayni-mi",
+   "title": "iTunes Kodu ile App Store Hediye Kartı Aynı mı?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-kodunu-yanlislikla-hesabima-yukledim-ne-olur",
+   "title": "iTunes Kodunu Yanlışlıkla Hesabıma Yükledim, Ne Olur?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-kodu-bozdururken-fotograf-mi-yazi-mi-paylasmali",
+   "title": "iTunes Kodu Bozdururken Fotoğraf mı Yazı mı Paylaşmalıyım?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "android-kullanicilari-itunes-kodu-bozdurabilir-mi",
+   "title": "Android Kullanıcıları iTunes Kodu Bozdurabilir mi?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-kodu-sahte-mi-gercek-mi-nasil-anlarim",
+   "title": "iTunes Kodu Sahte mi Gerçek mi Nasıl Anlarım?",
+   "service": "itunes",
+   "published": false
+  },
+  {
+   "slug": "itunes-bozdurma-islemi-neden-reddedilir",
+   "title": "iTunes Kodu Bozdurma İşlemi Neden Reddedilir?",
+   "service": "itunes",
+   "published": false
+  }
+ ]
 }
