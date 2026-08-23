@@ -96,7 +96,8 @@
    "slug": "mobil-odeme-limiti-nasil-artirilir",
    "title": "Mobil Ödeme Limiti Nasıl Artırılır?",
    "service": "mobil-odeme",
-   "published": false
+   "published": true,
+   "published_date": "2026-08-23"
   },
   {
    "slug": "fatura-bozum-nedir",
