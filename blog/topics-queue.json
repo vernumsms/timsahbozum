@@ -103,7 +103,8 @@
    "slug": "fatura-bozum-nedir",
    "title": "Fatura Bozum Nedir?",
    "service": "mobil-odeme",
-   "published": false
+   "published": true,
+   "published_date": "2026-08-24"
   },
   {
    "slug": "mobil-odeme-bozdurmada-odeme-nasil-tahsil-edilir",
