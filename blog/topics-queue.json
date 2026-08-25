@@ -110,7 +110,8 @@
    "slug": "mobil-odeme-bozdurmada-odeme-nasil-tahsil-edilir",
    "title": "Mobil Ödeme Bozdurmada Ödemeni Nasıl Alırsın? IBAN ile Tahsilat",
    "service": "mobil-odeme",
-   "published": false
+   "published": true,
+   "published_date": "2026-08-25"
   },
   {
    "slug": "mobil-odeme-bozdurma-komisyon-oranlari-nasil-belirlenir",
