@@ -1,0 +1,25 @@
+# TimsahBozum
+
+> TimsahBozum, Razer Gold, Pokus, Paycell, iTunes ve operatör (Turkcell, Vodafone, Türk Telekom) mobil ödeme bakiyesini WhatsApp üzerinden nakite çeviren Türkiye merkezli bir mobil bozum hizmetidir. Üyelik veya form yoktur; işlem yalnızca resmi WhatsApp hattından yürür.
+
+## Hizmet sayfaları
+- [Mobil Ödeme Bozdurma](https://timsahbozum.com/mobil-odeme-bozdurma.html): Operatör bakiyesi bozdurma, güncel oranlar ve süreç
+- [Razer Gold Bozdurma](https://timsahbozum.com/razer-gold-bozdurma.html): Razer Gold PIN kodu bozdurma
+- [Pokus Bozdurma](https://timsahbozum.com/pokus-bozdurma.html): Pokus bakiyesi bozdurma
+- [Paycell Bozdurma](https://timsahbozum.com/paycell-bozdurma.html): Paycell cüzdan bakiyesi bozdurma
+- [iTunes Bakiye Bozdurma](https://timsahbozum.com/itunes-bakiye-bozdurma.html): iTunes / Apple hediye kodu bozdurma
+- [Turkcell Mobil Ödeme Bozdurma](https://timsahbozum.com/turkcell-mobil-odeme-bozdurma.html)
+- [Vodafone Mobil Ödeme Bozdurma](https://timsahbozum.com/vodafone-mobil-odeme-bozdurma.html)
+- [Türk Telekom Mobil Ödeme Bozdurma](https://timsahbozum.com/turk-telekom-mobil-odeme-bozdurma.html)
+
+## Rehber ve bilgi
+- [Sık Sorulan Sorular](https://timsahbozum.com/sss.html)
+- [Hakkımızda](https://timsahbozum.com/hakkimizda.html)
+- [Blog](https://timsahbozum.com/blog.html): Bozum süreci, güvenlik, oranlar ve operatör bazlı rehberler
+- [Mobil Ödeme Bozdurma Yasal mı?](https://timsahbozum.com/blog/mobil-odeme-bozdurma-yasal-mi.html)
+- [Bozum İşlemi Nedir? (Yeni Başlayanlar İçin)](https://timsahbozum.com/blog/bozum-islemi-nedir-yeni-baslayanlar-icin.html)
+- [Mobil Ödeme Bozum Dolandırıcılığından Korunma](https://timsahbozum.com/blog/mobil-odeme-bozum-dolandiriciligindan-korunma.html)
+
+## İletişim
+- [İletişim](https://timsahbozum.com/iletisim.html): Resmi WhatsApp hattı +90 543 887 21 71, çalışma saatleri 10:00–03:00
+- Site haritası: https://timsahbozum.com/sitemap.xml
