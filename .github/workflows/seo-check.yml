@@ -1,0 +1,28 @@
+name: Blog SEO kontrolu
+
+# Her push'ta blog/ altindaki tum makaleleri scripts/seo-check.js ile denetler.
+# Rutin ayni scripti commit'ten ONCE calistirir; bu workflow ikinci emniyet kemeridir.
+# Kirmizi yanarsa: mail gelir, hangi makalede hangi kuralin kirildigi loglarda yazar.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'blog/**'
+      - 'blog.html'
+      - 'sitemap.xml'
+      - 'go/**'
+      - 'images/blog/**'
+      - 'scripts/seo-check.js'
+  workflow_dispatch:
+
+jobs:
+  seo-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Tum blog makalelerini denetle
+        run: node scripts/seo-check.js --all
