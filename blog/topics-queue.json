@@ -1,5 +1,5 @@
 {
- "_readme": "Otomatik günlük blog yayın kuyruğu. Her satır bir makale konusudur. published=false olanlar sırayla (listelenme sırasına göre) yayınlanır; sıra = yayın önceliğidir ve GSC arama verisine göre yeniden sıralanabilir (13.08.2026: temel/pillar konular öne alındı). Bir konu yayınlandığında published=true yapılır ve published_date (YYYY-MM-DD, Europe/Istanbul) eklenir. Günde en fazla 1 makale yayınlanır. Yeni konu eklerken listenin uygun öncelik noktasına ekle; mevcut kayıtların slug/alanlarını değiştirme.",
+ "_readme": "Otomatik günlük blog yayın kuyruğu. Her satır bir makale konusudur. published=false olanlar sırayla (listelenme sırasına göre) yayınlanır; sıra = yayın önceliğidir ve GSC arama verisine göre yeniden sıralanabilir (13.08.2026: temel/pillar konular öne alındı). Bir konu yayınlandığında published=true yapılır ve published_date (YYYY-MM-DD, Europe/Istanbul) eklenir. Günlük limit rutin prompt'unda tanımlıdır: 26.09.2026'ya kadar günde en fazla 2 makale (sabah UTC 05-11 / akşam UTC 14-20 pencerelerinde birer), 27.09.2026'dan itibaren günde 1. Yayınlanan konuya published_at (UTC ISO zaman) da eklenir; pencere kontrolü bu alandan yapılır. Yeni konu eklerken listenin uygun öncelik noktasına ekle; mevcut kayıtların slug/alanlarını değiştirme.",
  "topics": [
   {
    "slug": "razer-gold-kodu-nasil-bozdurulur-adim-adim",
