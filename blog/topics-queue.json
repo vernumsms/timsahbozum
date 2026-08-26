@@ -117,7 +117,9 @@
    "slug": "mobil-odeme-bozdurma-komisyon-oranlari-nasil-belirlenir",
    "title": "Mobil Ödeme Bozdurma Komisyon Oranları Nasıl Belirlenir?",
    "service": "mobil-odeme",
-   "published": false
+   "published": true,
+   "published_date": "2026-08-26",
+   "published_at": "2026-08-26T05:13:12Z"
   },
   {
    "slug": "mobil-odeme-limit-bozum-nedir",
