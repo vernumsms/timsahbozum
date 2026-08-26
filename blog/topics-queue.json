@@ -125,7 +125,9 @@
    "slug": "mobil-odeme-limit-bozum-nedir",
    "title": "Mobil Ödeme Limit Bozum Nedir? Limitin Tamamı Bozdurulur mu?",
    "service": "mobil-odeme",
-   "published": false
+   "published": true,
+   "published_date": "2026-08-26",
+   "published_at": "2026-08-26T17:08:29Z"
   },
   {
    "slug": "mobil-odeme-bozdurma-kredi-notunu-etkiler-mi",
