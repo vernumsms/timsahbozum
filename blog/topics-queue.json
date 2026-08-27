@@ -141,7 +141,9 @@
    "slug": "hangi-operatorlerde-mobil-odeme-bozdurma-yapiliyor",
    "title": "Hangi Operatörlerde Mobil Ödeme Bozdurma Yapılıyor?",
    "service": "mobil-odeme",
-   "published": false
+   "published": true,
+   "published_date": "2026-08-27",
+   "published_at": "2026-08-27T20:05:50Z"
   },
   {
    "slug": "turkcell-mobil-odeme-bozdurma-ne-zaman-aktif",
