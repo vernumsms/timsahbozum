@@ -133,7 +133,9 @@
    "slug": "mobil-odeme-bozdurma-kredi-notunu-etkiler-mi",
    "title": "Mobil Ödeme Bozdurma Kredi Notunu Etkiler mi?",
    "service": "mobil-odeme",
-   "published": false
+   "published": true,
+   "published_date": "2026-08-27",
+   "published_at": "2026-08-27T08:07:00Z"
   },
   {
    "slug": "hangi-operatorlerde-mobil-odeme-bozdurma-yapiliyor",
