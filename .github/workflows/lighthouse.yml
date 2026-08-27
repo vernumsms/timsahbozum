@@ -1,7 +1,7 @@
 name: Lighthouse performans denetimi
 
 # Onemli sayfalarin Lighthouse skorlarini her push'ta olcer.
-# Performans < 0.80 veya SEO < 0.90'a duserse workflow kirmizi yanar.
+# 3 kosunun MEDYANI alinir (runner gurultusune karsi). Performans < 0.75 veya SEO < 0.90 ise kirmizi yanar.
 
 on:
   push:
