@@ -124,7 +124,9 @@ function checkPost(rel) {
 
   // --- SSS / FAQPage senkronu
   const visibleFaq = (html.match(/class="faq-question"/g) || []).length;
-  if (visibleFaq > 0 && !faqPage) {
+  if (visibleFaq === 0) {
+    warn("görünür SSS bölümü yok (FAQ hem zengin sonuç hem AI alıntısı için önemli)");
+  } else if (visibleFaq > 0 && !faqPage) {
     warn(`görünür SSS var (${visibleFaq} soru) ama FAQPage JSON-LD yok`);
   } else if (visibleFaq > 0 && faqPage) {
     const ldFaq = Array.isArray(faqPage.mainEntity) ? faqPage.mainEntity.length : 0;
