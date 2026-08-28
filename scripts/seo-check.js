@@ -97,6 +97,7 @@ function checkPost(rel) {
   if (!blocks.length) err("JSON-LD yok");
   const types = new Set();
   let posting = null;
+  let faqPage = null;
   for (const b of blocks) {
     try {
       const j = JSON.parse(b);
@@ -104,6 +105,7 @@ function checkPost(rel) {
         if (!o || typeof o !== "object") return;
         if (o["@type"]) types.add(o["@type"]);
         if (o["@type"] === "BlogPosting") posting = o;
+        if (o["@type"] === "FAQPage") faqPage = o;
         for (const v of Object.values(o)) walk(v);
       };
       walk(j);
@@ -118,6 +120,15 @@ function checkPost(rel) {
     const mep = posting.mainEntityOfPage && (posting.mainEntityOfPage["@id"] || posting.mainEntityOfPage);
     if (mep && mep !== canonicalUrl) err(`BlogPosting.mainEntityOfPage canonical değil: ${mep}`);
     if (posting.url && posting.url !== canonicalUrl) err(`BlogPosting.url canonical değil: ${posting.url}`);
+  }
+
+  // --- SSS / FAQPage senkronu
+  const visibleFaq = (html.match(/class="faq-question"/g) || []).length;
+  if (visibleFaq > 0 && !faqPage) {
+    warn(`görünür SSS var (${visibleFaq} soru) ama FAQPage JSON-LD yok`);
+  } else if (visibleFaq > 0 && faqPage) {
+    const ldFaq = Array.isArray(faqPage.mainEntity) ? faqPage.mainEntity.length : 0;
+    if (ldFaq !== visibleFaq) warn(`SSS senkron değil: görünür ${visibleFaq} soru, FAQPage JSON-LD ${ldFaq} soru`);
   }
 
   // --- gövde
