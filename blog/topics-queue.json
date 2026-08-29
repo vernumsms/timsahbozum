@@ -165,7 +165,9 @@
       "slug": "pokus-bakiyesi-nedir-nasil-olusur",
       "title": "Pokus Bakiyesi Nedir, Nasıl Oluşur?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-29",
+      "published_at": "2026-08-29T08:09:24Z"
     },
     {
       "slug": "paycell-bakiyesi-nasil-olusur-nereden-gelir",
