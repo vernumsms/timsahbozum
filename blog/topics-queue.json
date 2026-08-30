@@ -189,7 +189,9 @@
       "slug": "razer-gold-kodunu-guvenle-bozdurmanin-yollari",
       "title": "Razer Gold Kodunu Güvenle Bozdurmanın Yolları",
       "service": "razer-gold",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-30",
+      "published_at": "2026-08-30T20:05:51Z"
     },
     {
       "slug": "ilk-kez-bozum-yapacaklar-icin-kapsamli-rehber",
