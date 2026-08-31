@@ -205,7 +205,9 @@
       "slug": "acil-nakit-ihtiyacinda-mobil-odeme-bozdurma",
       "title": "Acil Nakit İhtiyacında Mobil Ödeme Bozdurma",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-31",
+      "published_at": "2026-08-31T20:08:46Z"
     },
     {
       "slug": "faturali-faturasiz-hatlarda-mobil-odeme-farki",
