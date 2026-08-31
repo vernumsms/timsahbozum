@@ -197,7 +197,9 @@
       "slug": "ilk-kez-bozum-yapacaklar-icin-kapsamli-rehber",
       "title": "İlk Kez Bozum Yapacaklar İçin Kapsamlı Rehber",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-08-31",
+      "published_at": "2026-08-31T05:11:19Z"
     },
     {
       "slug": "acil-nakit-ihtiyacinda-mobil-odeme-bozdurma",
