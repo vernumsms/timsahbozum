@@ -1,6 +1,6 @@
 # TimsahBozum
 
-> TimsahBozum, Razer Gold, Pokus, Paycell, iTunes ve operatör (Turkcell, Vodafone, Türk Telekom) mobil ödeme bakiyesini WhatsApp üzerinden nakite çeviren Türkiye merkezli bir mobil bozum hizmetidir. Üyelik veya form yoktur; işlem yalnızca resmi WhatsApp hattından yürür.
+> TimsahBozum, Razer Gold, Google Play, iTunes, Pokus, Paycell ve operatör (Turkcell, Vodafone, Türk Telekom) mobil ödeme bakiyesini WhatsApp üzerinden nakite çeviren Türkiye merkezli bir mobil bozum hizmetidir. Üyelik veya form yoktur; işlem yalnızca resmi WhatsApp hattından yürür.
 
 ## Hizmet sayfaları
 - [Mobil Ödeme Bozdurma](https://timsahbozum.com/mobil-odeme-bozdurma.html): Operatör bakiyesi bozdurma, güncel oranlar ve süreç
@@ -8,6 +8,7 @@
 - [Pokus Bozdurma](https://timsahbozum.com/pokus-bozdurma.html): Pokus bakiyesi bozdurma
 - [Paycell Bozdurma](https://timsahbozum.com/paycell-bozdurma.html): Paycell cüzdan bakiyesi bozdurma
 - [iTunes Bakiye Bozdurma](https://timsahbozum.com/itunes-bakiye-bozdurma.html): iTunes / Apple hediye kodu bozdurma
+- [Google Play Kod Bozdurma](https://timsahbozum.com/google-play-bozdurma.html): Kullanılmamış Google Play hediye kartı kodu bozdurma
 - [Turkcell Mobil Ödeme Bozdurma](https://timsahbozum.com/turkcell-mobil-odeme-bozdurma.html)
 - [Vodafone Mobil Ödeme Bozdurma](https://timsahbozum.com/vodafone-mobil-odeme-bozdurma.html)
 - [Türk Telekom Mobil Ödeme Bozdurma](https://timsahbozum.com/turk-telekom-mobil-odeme-bozdurma.html)

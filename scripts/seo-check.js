@@ -12,7 +12,7 @@ const path = require("path");
 const ROOT = path.resolve(__dirname, "..");
 const SITE = "https://timsahbozum.com/";
 const SERVICE_PAGES = [
-  "razer-gold-bozdurma.html", "pokus-bozdurma.html", "paycell-bozdurma.html", "itunes-bakiye-bozdurma.html",
+  "razer-gold-bozdurma.html", "pokus-bozdurma.html", "paycell-bozdurma.html", "itunes-bakiye-bozdurma.html", "google-play-bozdurma.html",
   "mobil-odeme-bozdurma.html", "vodafone-mobil-odeme-bozdurma.html", "turk-telekom-mobil-odeme-bozdurma.html",
   "turkcell-mobil-odeme-bozdurma.html",
 ];

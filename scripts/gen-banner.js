@@ -7,6 +7,7 @@ const ICONS = {
   'pokus': `<path d="M20 12l-8-8-8 8 8 8z"/><circle cx="12" cy="9.5" r="1" fill="#d9ae32" stroke="none"/><circle cx="9" cy="12.5" r="1" fill="#d9ae32" stroke="none"/><circle cx="15" cy="12.5" r="1" fill="#d9ae32" stroke="none"/><circle cx="12" cy="15.5" r="1" fill="#d9ae32" stroke="none"/>`,
   'paycell': `<rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20"/><circle cx="6.5" cy="15.5" r="1.2" fill="#d9ae32" stroke="none"/>`,
   'itunes': `<circle cx="12" cy="12" r="9"/><path d="M9.5 8.5v8l6-4z" fill="#d9ae32" stroke="none"/>`,
+  'google-play': `<path d="M4 3.5v17a1 1 0 0 0 1.5.87l13-8.5a1 1 0 0 0 0-1.74l-13-8.5A1 1 0 0 0 4 3.5z"/><path d="M4.5 3.7L14 12l-9.5 8.3" fill="none"/>`,
   'vodafone': `<rect x="4" y="2" width="16" height="20" rx="3"/><path d="M9 6h6M10 18h4"/>`,
   'turk-telekom': `<rect x="4" y="2" width="16" height="20" rx="3"/><path d="M9 6h6M10 18h4"/>`,
   'turkcell': `<rect x="4" y="2" width="16" height="20" rx="3"/><path d="M9 6h6M10 18h4"/>`,
@@ -19,6 +20,7 @@ const BADGE = {
   'pokus': 'POKUS',
   'paycell': 'PAYCELL',
   'itunes': 'İTUNES',
+  'google-play': 'GOOGLE PLAY',
   'vodafone': 'VODAFONE',
   'turk-telekom': 'TÜRK TELEKOM',
   'turkcell': 'TURKCELL',
@@ -31,6 +33,7 @@ const TAGLINE = {
   'pokus': 'Pokus bakiyesi bozdurma süreci ve pratik bilgiler',
   'paycell': 'Paycell bakiyesi bozdurma süreci ve pratik bilgiler',
   'itunes': 'iTunes kodu bozdurma süreci ve dikkat edilmesi gerekenler',
+  'google-play': 'Google Play kodu bozdurma süreci ve dikkat edilmesi gerekenler',
   'vodafone': 'Vodafone mobil ödeme bozdurma süreci ve pratik bilgiler',
   'turk-telekom': 'Türk Telekom mobil ödeme bozdurma süreci ve pratik bilgiler',
   'turkcell': 'Turkcell mobil ödeme bozdurma süreci ve pratik bilgiler',
@@ -43,6 +46,7 @@ const CHIPS = {
   'pokus': ['%60 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
   'paycell': ['%60 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
   'itunes': ['%55 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
+  'google-play': ['%45 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
   'vodafone': ['%50 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
   'turk-telekom': ['%50 Oran', 'Güvenli İşlem', 'Hızlı Sonuç'],
   'turkcell': ['%30 Oran', 'Paycell ile %60', 'Güvenli İşlem'],
@@ -56,7 +60,7 @@ const CHIP_ICONS = [
   `<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>`,
 ];
 
-const ACCENT_WORDS = ['Razer Gold', 'Pokus', 'Paycell', 'iTunes', 'Vodafone', 'Türk Telekom', 'Mobil Ödeme', 'Turkcell'];
+const ACCENT_WORDS = ['Razer Gold', 'Google Play', 'Pokus', 'Paycell', 'iTunes', 'Vodafone', 'Türk Telekom', 'Mobil Ödeme', 'Turkcell'];
 
 function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
