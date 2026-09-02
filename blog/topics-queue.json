@@ -221,7 +221,9 @@
       "slug": "google-play-kodu-bolgeye-ozel-mi",
       "title": "Google Play Kodu Bölgeye Özel mi? Ülke Kilidi Nasıl Çalışır?",
       "service": "google-play",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-02",
+      "published_at": "2026-09-02T17:09:19Z"
     },
     {
       "slug": "google-play-hediye-karti-kodu-nereden-alinir",
