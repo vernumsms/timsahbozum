@@ -213,7 +213,9 @@
       "slug": "google-play-bakiyesi-nakde-cevrilir-mi",
       "title": "Google Play Bakiyesi Nakde Çevrilir mi?",
       "service": "google-play",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-02",
+      "published_at": "2026-09-02T05:11:00Z"
     },
     {
       "slug": "google-play-kodu-bolgeye-ozel-mi",
