@@ -1,0 +1,35 @@
+name: Google Indexing API bildirimi
+
+# Sitemap her degistiginde (yeni makale yayinlandiginda / sayfa guncellendiginde)
+# yeni eklenen veya lastmod'u degisen URL'leri Google Indexing API'ye bildirir.
+# Boylece rutinin yayinladigi her makale icin dizin basvurusu otomatik yapilir.
+# Anahtar: GSC_SA_JSON secret'i (servis hesabi, GSC mulkunde Owner). Kota: 200/gun.
+# Elle calistirma: Actions > bu workflow > Run workflow (urls bos = son 2 gunde degisenler).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'sitemap.xml'
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'Bildirilecek URL listesi (bosluk ile ayrilmis; bos birakilirsa son 2 gunde degisenler)'
+        required: false
+        default: ''
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Google Indexing API bildirimi
+        env:
+          GSC_SA_JSON: ${{ secrets.GSC_SA_JSON }}
+          BEFORE_SHA: ${{ github.event.before }}
+        run: node scripts/google-indexing-notify.js ${{ github.event.inputs.urls }}
