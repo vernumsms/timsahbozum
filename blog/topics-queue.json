@@ -245,7 +245,9 @@
       "slug": "google-play-kodu-sahte-mi-gercek-mi",
       "title": "Google Play Kodu Sahte mi Gerçek mi Nasıl Anlarım?",
       "service": "google-play",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-04",
+      "published_at": "2026-09-04T11:15:14Z"
     },
     {
       "slug": "google-play-razer-gold-itunes-kodu-farki",
