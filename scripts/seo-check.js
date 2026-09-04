@@ -222,5 +222,15 @@ for (const f of files) {
   for (const e of r.errors) console.log("   ✗ " + e);
   for (const w of r.warns) console.log("   · " + w);
 }
+// ---- site geneli: ana sayfa "Son yazılar" bloğu blog.html ile senkron mu?
+{
+  const { spawnSync } = require("child_process");
+  const r = spawnSync(process.execPath, [path.join(__dirname, "update-recent-posts.js"), "--check"], { encoding: "utf8" });
+  if (r.status !== 0) {
+    failed++;
+    console.log("[HATA] index.html");
+    console.log("   ✗ " + (r.stdout || r.stderr).trim() + " (rutin ADIM 6'da çalıştırılmalı)");
+  }
+}
 console.log(`\n${files.length} makale kontrol edildi, ${failed} hatalı.`);
 process.exit(failed ? 1 : 0);
