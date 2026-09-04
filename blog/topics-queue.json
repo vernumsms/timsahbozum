@@ -253,7 +253,9 @@
       "slug": "google-play-razer-gold-itunes-kodu-farki",
       "title": "Google Play, Razer Gold ve iTunes Kodu Arasındaki Fark",
       "service": "google-play",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-04",
+      "published_at": "2026-09-04T14:07:36Z"
     },
     {
       "slug": "google-play-kodu-bozdurma-neden-reddedilir",
