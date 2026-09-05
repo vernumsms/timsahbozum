@@ -261,7 +261,9 @@
       "slug": "google-play-kodu-bozdurma-neden-reddedilir",
       "title": "Google Play Kodu Bozdurma İşlemi Neden Reddedilir?",
       "service": "google-play",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-05",
+      "published_at": "2026-09-05T08:11:00Z"
     },
     {
       "slug": "acil-nakit-ihtiyacinda-mobil-odeme-bozdurma",
