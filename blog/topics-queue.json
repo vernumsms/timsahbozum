@@ -285,7 +285,9 @@
       "slug": "mobil-odeme-bakiyesi-ile-kontor-bakiyesi-karistirilir-mi",
       "title": "Mobil Ödeme Bakiyesi ile Kontör Bakiyesi Karıştırılır mı?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-05",
+      "published_at": "2026-09-05T20:09:20Z"
     },
     {
       "slug": "mobil-odeme-bakiyesi-google-playde-nasil-kullanilir",
