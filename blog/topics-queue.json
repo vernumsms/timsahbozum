@@ -301,7 +301,9 @@
       "slug": "mobil-odeme-bozdurma-kontor-bozdurma-ayni-mi",
       "title": "Mobil Ödeme Bozdurma ile Kontör Bozdurma Aynı Şey mi?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-06",
+      "published_at": "2026-09-06T17:08:44Z"
     },
     {
       "slug": "mobil-odeme-bakiyesi-kismi-bozdurulabilir-mi",
