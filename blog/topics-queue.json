@@ -309,7 +309,9 @@
       "slug": "mobil-odeme-bakiyesi-kismi-bozdurulabilir-mi",
       "title": "Mobil Ödeme Bakiyesi Kısmi Bozdurulabilir mi?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-07",
+      "published_at": "2026-09-07T11:11:01Z"
     },
     {
       "slug": "mobil-odeme-limitim-neden-kapali-nasil-acilir",
