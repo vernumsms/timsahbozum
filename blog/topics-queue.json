@@ -325,7 +325,9 @@
       "slug": "mobil-odeme-limiti-nasil-belirlenir",
       "title": "Mobil Ödeme Limiti Nasıl Belirlenir?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-08",
+      "published_at": "2026-09-08T08:10:58Z"
     },
     {
       "slug": "mobil-odeme-bakiyesi-ay-sonunda-sifirlanir-mi",
