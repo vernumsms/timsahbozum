@@ -333,7 +333,9 @@
       "slug": "mobil-odeme-bakiyesi-ay-sonunda-sifirlanir-mi",
       "title": "Mobil Ödeme Bakiyesi Ay Sonunda Sıfırlanır mı?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-08",
+      "published_at": "2026-09-08T14:10:34Z"
     },
     {
       "slug": "mobil-odeme-bakiyesi-netflix-spotify-kullanilir-mi",
