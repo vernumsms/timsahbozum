@@ -349,7 +349,9 @@
       "slug": "mobil-odeme-bakiyesi-birden-fazla-hatta-mi-tanimlanir",
       "title": "Mobil Ödeme Bakiyesi Birden Fazla Hatta mı Tanımlanır?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-09",
+      "published_at": "2026-09-09T20:06:05Z"
     },
     {
       "slug": "mobil-odeme-bakiyesi-bozdururken-hangi-ekran-goruntusu-istenir",
