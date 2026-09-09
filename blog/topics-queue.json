@@ -341,7 +341,9 @@
       "slug": "mobil-odeme-bakiyesi-netflix-spotify-kullanilir-mi",
       "title": "Mobil Ödeme Bakiyesi Netflix veya Spotify'da Kullanılır mı?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-09",
+      "published_at": "2026-09-09T08:10:33Z"
     },
     {
       "slug": "mobil-odeme-bakiyesi-birden-fazla-hatta-mi-tanimlanir",
