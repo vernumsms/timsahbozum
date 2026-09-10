@@ -357,7 +357,9 @@
       "slug": "mobil-odeme-bakiyesi-bozdururken-hangi-ekran-goruntusu-istenir",
       "title": "Mobil Ödeme Bakiyesi Bozdururken Hangi Ekran Görüntüsü İstenir?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-10",
+      "published_at": "2026-09-10T11:10:12Z"
     },
     {
       "slug": "aile-hattimda-mobil-odeme-bakiyesi-varsa-bozdurabilir-miyim",
