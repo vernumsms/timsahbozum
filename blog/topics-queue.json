@@ -373,7 +373,9 @@
       "slug": "mobil-odeme-bakiyesi-yurt-disinda-kullanilir-mi",
       "title": "Mobil Ödeme Bakiyesi Yurt Dışında Kullanılır mı?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-11",
+      "published_at": "2026-09-11T11:09:55Z"
     },
     {
       "slug": "mobil-odeme-bozdurma-islemi-neden-reddedilir",
