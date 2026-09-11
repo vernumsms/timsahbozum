@@ -381,7 +381,9 @@
       "slug": "mobil-odeme-bozdurma-islemi-neden-reddedilir",
       "title": "Mobil Ödeme Bozdurma İşlemi Neden Reddedilir?",
       "service": "mobil-odeme",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-11",
+      "published_at": "2026-09-11T20:05:39Z"
     },
     {
       "slug": "mobil-odeme-limitim-ne-kadar-nasil-ogrenirim",
