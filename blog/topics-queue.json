@@ -397,7 +397,9 @@
       "slug": "vodafone-mobil-odeme-limitini-nasil-ogrenirim",
       "title": "Vodafone Mobil Ödeme Limitini Nasıl Öğrenirim?",
       "service": "vodafone",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-12",
+      "published_at": "2026-09-12T20:05:22Z"
     },
     {
       "slug": "vodafoneum-uygulamasindan-limit-nasil-gorulur",
