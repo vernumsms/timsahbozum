@@ -405,7 +405,9 @@
       "slug": "vodafoneum-uygulamasindan-limit-nasil-gorulur",
       "title": "Vodafone'um Uygulamasından Mobil Ödeme Limiti Nasıl Görülür?",
       "service": "vodafone",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-13",
+      "published_at": "2026-09-13T08:09:07Z"
     },
     {
       "slug": "vodafone-mobil-odeme-bakiyesi-faturama-nasil-yansir",
