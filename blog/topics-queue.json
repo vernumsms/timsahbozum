@@ -413,7 +413,9 @@
       "slug": "vodafone-mobil-odeme-bakiyesi-faturama-nasil-yansir",
       "title": "Vodafone Mobil Ödeme Bakiyesi Faturama Nasıl Yansır?",
       "service": "vodafone",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-13",
+      "published_at": "2026-09-13T17:09:41Z"
     },
     {
       "slug": "vodafone-mobil-odeme-ile-vodafone-pay-ayni-sey-mi",
