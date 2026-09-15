@@ -445,7 +445,9 @@
       "slug": "turktelekomum-uygulamasindan-limit-nasil-gorulur",
       "title": "Türk Telekom'um Uygulamasından Mobil Ödeme Limiti Nasıl Görülür?",
       "service": "turk-telekom",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-15",
+      "published_at": "2026-09-15T20:05:38Z"
     },
     {
       "slug": "turk-telekom-mobil-odeme-bakiyesi-faturama-nasil-yansir",
