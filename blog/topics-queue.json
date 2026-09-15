@@ -437,7 +437,9 @@
       "slug": "turk-telekom-mobil-odeme-limitini-nasil-ogrenirim",
       "title": "Türk Telekom Mobil Ödeme Limitini Nasıl Öğrenirim?",
       "service": "turk-telekom",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-15",
+      "published_at": "2026-09-15T11:06:18Z"
     },
     {
       "slug": "turktelekomum-uygulamasindan-limit-nasil-gorulur",
