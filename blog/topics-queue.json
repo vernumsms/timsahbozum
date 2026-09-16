@@ -453,7 +453,9 @@
       "slug": "turk-telekom-mobil-odeme-bakiyesi-faturama-nasil-yansir",
       "title": "Türk Telekom Mobil Ödeme Bakiyesi Faturama Nasıl Yansır?",
       "service": "turk-telekom",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-16",
+      "published_at": "2026-09-16T05:05:38Z"
     },
     {
       "slug": "turk-telekom-mobil-odeme-bozdurma-ne-kadar-surede-sonuclanir",
