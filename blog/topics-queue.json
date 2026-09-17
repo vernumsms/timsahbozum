@@ -477,7 +477,9 @@
       "slug": "bozum-oranlari-neden-hizmetten-hizmete-degisir",
       "title": "Bozum Oranları Neden Hizmetten Hizmete Değişir?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-17",
+      "published_at": "2026-09-17T17:09:22Z"
     },
     {
       "slug": "bozum-isleminde-hesabima-erisim-veriyor-muyum",
