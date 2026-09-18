@@ -485,7 +485,9 @@
       "slug": "bozum-isleminde-hesabima-erisim-veriyor-muyum",
       "title": "Bozum İşleminde Hesabıma Erişim Veriyor muyum?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-18",
+      "published_at": "2026-09-18T11:09:16Z"
     },
     {
       "slug": "bozum-islemi-ne-zaman-tamamlanir-surec-nasil-isler",
