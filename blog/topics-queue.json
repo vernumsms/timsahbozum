@@ -493,7 +493,9 @@
       "slug": "bozum-islemi-ne-zaman-tamamlanir-surec-nasil-isler",
       "title": "Bozum İşlemi Ne Zaman Tamamlanır, Süreç Nasıl İşler?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-18",
+      "published_at": "2026-09-18T17:09:14Z"
     },
     {
       "slug": "sms-dogrulama-kodu-isteyen-kisilere-dikkat",
