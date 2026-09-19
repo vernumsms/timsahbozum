@@ -509,7 +509,9 @@
       "slug": "gece-yarisi-bozum-yapilir-mi-calisma-saatleri",
       "title": "Gece Yarısı Bozum Yapılır mı? Çalışma Saatleri Rehberi",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-19",
+      "published_at": "2026-09-19T14:05:32Z"
     },
     {
       "slug": "bozum-hizmetinde-uyelik-veya-form-gerekir-mi",
