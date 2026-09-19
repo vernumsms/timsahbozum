@@ -501,7 +501,9 @@
       "slug": "sms-dogrulama-kodu-isteyen-kisilere-dikkat",
       "title": "Bozum Yaparken SMS Doğrulama Kodu İsteyen Kişilere Dikkat",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-19",
+      "published_at": "2026-09-19T11:05:38Z"
     },
     {
       "slug": "gece-yarisi-bozum-yapilir-mi-calisma-saatleri",
