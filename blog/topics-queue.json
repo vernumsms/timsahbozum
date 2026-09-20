@@ -517,7 +517,9 @@
       "slug": "bozum-hizmetinde-uyelik-veya-form-gerekir-mi",
       "title": "Bozum Hizmetinde Üyelik veya Form Gerekir mi?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-20",
+      "published_at": "2026-09-20T05:09:00Z"
     },
     {
       "slug": "kod-tabanli-bakiye-tabanli-bozum-farki",
