@@ -533,7 +533,9 @@
       "slug": "bozum-yaparken-en-sik-yapilan-hatalar",
       "title": "Bozum Yaparken En Sık Yapılan 7 Hata",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-21",
+      "published_at": "2026-09-21T05:09:37Z"
     },
     {
       "slug": "resmi-bozum-hattini-sahte-hesaplardan-ayirt-etme",
