@@ -549,7 +549,9 @@
       "slug": "bozum-yaparken-hangi-bilgileri-asla-paylasmamalisin",
       "title": "Bozum Yaparken Hangi Bilgileri Asla Paylaşmamalısın?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-22",
+      "published_at": "2026-09-22T11:17:08Z"
     },
     {
       "slug": "bozum-islemi-iptal-edilebilir-mi",
