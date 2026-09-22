@@ -557,7 +557,9 @@
       "slug": "bozum-islemi-iptal-edilebilir-mi",
       "title": "Bozum İşlemi İptal Edilebilir mi?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-22",
+      "published_at": "2026-09-22T14:17:06Z"
     },
     {
       "slug": "bozum-yaparken-ekran-goruntusu-nasil-dogru-cekilir",
