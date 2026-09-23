@@ -573,7 +573,9 @@
       "slug": "bozum-orani-neden-farkli-cikabilir",
       "title": "Bozum Oranı Neden Sitedekiyle WhatsApp'takinden Farklı Çıkabilir?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-23",
+      "published_at": "2026-09-23T20:13:41Z"
     },
     {
       "slug": "bozum-yaptiktan-sonra-odeme-gelmezse-ne-yapmaliyim",
