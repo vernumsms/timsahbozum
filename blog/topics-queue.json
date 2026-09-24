@@ -589,7 +589,9 @@
       "slug": "bozum-sitesi-secerken-nelere-dikkat-etmeli",
       "title": "Bozum Sitesi Seçerken Nelere Dikkat Etmeli?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-24",
+      "published_at": "2026-09-24T17:14:41Z"
     },
     {
       "slug": "bozum-islemi-icin-yas-siniri-var-mi",
