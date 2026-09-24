@@ -581,7 +581,9 @@
       "slug": "bozum-yaptiktan-sonra-odeme-gelmezse-ne-yapmaliyim",
       "title": "Bozum Yaptıktan Sonra Ödeme Gelmezse Ne Yapmalıyım?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-24",
+      "published_at": "2026-09-24T05:17:47Z"
     },
     {
       "slug": "bozum-sitesi-secerken-nelere-dikkat-etmeli",
