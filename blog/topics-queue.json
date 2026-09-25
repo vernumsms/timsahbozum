@@ -597,7 +597,9 @@
       "slug": "bozum-islemi-icin-yas-siniri-var-mi",
       "title": "Bozum İşlemi için Yaş Sınırı Var mı?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-25",
+      "published_at": "2026-09-25T08:14:01Z"
     },
     {
       "slug": "ogrenciler-bozum-hizmetinden-nasil-yararlanir",
