@@ -605,7 +605,9 @@
       "slug": "ogrenciler-bozum-hizmetinden-nasil-yararlanir",
       "title": "Öğrenciler Bozum Hizmetinden Nasıl Yararlanır?",
       "service": "genel",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-25",
+      "published_at": "2026-09-25T14:18:00Z"
     },
     {
       "slug": "pokus-bakiyesi-bozdurmadan-once-kontrol",
