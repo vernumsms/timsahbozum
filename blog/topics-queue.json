@@ -621,7 +621,9 @@
       "slug": "pokus-ile-mobil-odeme-arasindaki-fark",
       "title": "Pokus ile Mobil Ödeme Arasındaki Fark Nedir?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-26",
+      "published_at": "2026-09-26T20:13:41Z"
     },
     {
       "slug": "kullanilmayan-pokus-bakiyesini-degerlendirme",
