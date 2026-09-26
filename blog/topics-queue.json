@@ -613,7 +613,9 @@
       "slug": "pokus-bakiyesi-bozdurmadan-once-kontrol",
       "title": "Pokus Bakiyesi Bozdurmadan Önce Kontrol Etmen Gerekenler",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-26",
+      "published_at": "2026-09-26T05:13:34Z"
     },
     {
       "slug": "pokus-ile-mobil-odeme-arasindaki-fark",
