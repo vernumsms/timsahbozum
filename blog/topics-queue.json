@@ -637,7 +637,9 @@
       "slug": "pokus-bakiye-ekran-goruntusu-nasil-paylasilir",
       "title": "Pokus Bakiye Ekran Görüntüsü Nasıl Doğru Paylaşılır?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-28",
+      "published_at": "2026-09-28T17:14:20Z"
     },
     {
       "slug": "pokus-bakiyesi-kismi-bozdurulabilir-mi",
