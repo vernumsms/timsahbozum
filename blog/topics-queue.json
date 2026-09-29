@@ -645,7 +645,9 @@
       "slug": "pokus-bakiyesi-kismi-bozdurulabilir-mi",
       "title": "Pokus Bakiyesi Kısmi Olarak Bozdurulabilir mi?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-29",
+      "published_at": "2026-09-29T20:14:03Z"
     },
     {
       "slug": "pokus-hesabima-erisim-veriyor-muyum",
