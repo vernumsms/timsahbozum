@@ -653,7 +653,9 @@
       "slug": "pokus-hesabima-erisim-veriyor-muyum",
       "title": "Pokus Bozdururken Hesabıma Erişim Veriyor muyum?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-09-30",
+      "published_at": "2026-09-30T20:14:07Z"
     },
     {
       "slug": "pokus-bakiyesi-ile-oyun-ici-satin-alma-rehberi",
