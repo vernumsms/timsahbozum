@@ -661,7 +661,9 @@
       "slug": "pokus-bakiyesi-ile-oyun-ici-satin-alma-rehberi",
       "title": "Pokus Bakiyesi ile Oyun İçi Satın Alma Rehberi",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-01",
+      "published_at": "2026-10-01T20:13:48Z"
     },
     {
       "slug": "pokus-bakiyesi-nasil-yuklenir",
