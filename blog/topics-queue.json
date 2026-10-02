@@ -669,7 +669,9 @@
       "slug": "pokus-bakiyesi-nasil-yuklenir",
       "title": "Pokus Bakiyesi Nasıl Yüklenir?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-02",
+      "published_at": "2026-10-02T11:14:13Z"
     },
     {
       "slug": "pokus-hangi-oyunlarda-kullanilir",
