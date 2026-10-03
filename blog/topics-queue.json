@@ -677,7 +677,9 @@
       "slug": "pokus-hangi-oyunlarda-kullanilir",
       "title": "Pokus Hangi Oyunlarda Kullanılır?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-03",
+      "published_at": "2026-10-03T05:13:22Z"
     },
     {
       "slug": "pokus-bakiyesi-suresi-doluyor-mu",
