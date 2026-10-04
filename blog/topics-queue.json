@@ -685,7 +685,9 @@
       "slug": "pokus-bakiyesi-suresi-doluyor-mu",
       "title": "Pokus Bakiyesinin Süresi Doluyor mu?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-04",
+      "published_at": "2026-10-04T11:05:28Z"
     },
     {
       "slug": "pokus-hesabim-kilitliyse-bakiyemi-bozdurabilir-miyim",
