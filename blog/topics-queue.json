@@ -693,7 +693,9 @@
       "slug": "pokus-hesabim-kilitliyse-bakiyemi-bozdurabilir-miyim",
       "title": "Pokus Hesabım Kilitliyse Bakiyemi Bozdurabilir miyim?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-05",
+      "published_at": "2026-10-05T20:05:45Z"
     },
     {
       "slug": "pokus-ile-razer-gold-arasindaki-fark-nedir",
