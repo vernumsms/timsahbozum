@@ -709,7 +709,9 @@
       "slug": "pokus-bakiyesini-yanlis-hesaba-yukledim-ne-yapmaliyim",
       "title": "Pokus Bakiyesini Yanlış Hesaba Yükledim, Ne Yapmalıyım?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-07",
+      "published_at": "2026-10-07T20:05:40Z"
     },
     {
       "slug": "pokus-bozdurma-islemi-ne-kadar-guvenli",
