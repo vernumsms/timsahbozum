@@ -717,7 +717,9 @@
       "slug": "pokus-bozdurma-islemi-ne-kadar-guvenli",
       "title": "Pokus Bozdurma İşlemi Ne Kadar Güvenli?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-08",
+      "published_at": "2026-10-08T20:05:27Z"
     },
     {
       "slug": "pokus-bakiyesi-bozdururken-ekran-goruntusu-nasil-alinir",
