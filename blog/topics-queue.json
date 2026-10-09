@@ -725,7 +725,9 @@
       "slug": "pokus-bakiyesi-bozdururken-ekran-goruntusu-nasil-alinir",
       "title": "Pokus Bakiyesi Bozdururken Ekran Görüntüsü Nasıl Alınır?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-09",
+      "published_at": "2026-10-09T14:06:10Z"
     },
     {
       "slug": "pokus-hediye-bakiyesi-bozdurulur-mu",
