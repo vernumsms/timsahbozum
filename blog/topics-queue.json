@@ -733,7 +733,9 @@
       "slug": "pokus-hediye-bakiyesi-bozdurulur-mu",
       "title": "Pokus Hediye Bakiyesi Bozdurulur mu?",
       "service": "pokus",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-10",
+      "published_at": "2026-10-10T11:05:40Z"
     },
     {
       "slug": "pokus-bozdurma-sik-yapilan-hatalar",
