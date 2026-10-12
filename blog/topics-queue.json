@@ -749,7 +749,9 @@
       "slug": "paycell-bakiyesi-bozdurmanin-guvenli-yolu",
       "title": "Paycell Bakiyesi Bozdurmanın Güvenli Yolu",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-12",
+      "published_at": "2026-10-12T05:06:01Z"
     },
     {
       "slug": "turkcell-hatti-olmayanlar-paycell-bozdurabilir-mi",
