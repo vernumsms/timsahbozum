@@ -757,7 +757,9 @@
       "slug": "turkcell-hatti-olmayanlar-paycell-bozdurabilir-mi",
       "title": "Turkcell Hattı Olmayanlar Paycell Bakiyesi Bozdurabilir mi?",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-13",
+      "published_at": "2026-10-13T08:10:42Z"
     },
     {
       "slug": "paycell-hediye-bakiyesi-bozdurulur-mu",
