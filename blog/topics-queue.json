@@ -765,7 +765,9 @@
       "slug": "paycell-hediye-bakiyesi-bozdurulur-mu",
       "title": "Paycell Hediye Bakiyesi Bozdurulur mu?",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-14",
+      "published_at": "2026-10-14T05:05:57Z"
     },
     {
       "slug": "paycell-bakiyesi-ile-fatura-odemesi-farki",
