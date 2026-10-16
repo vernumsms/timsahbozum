@@ -781,7 +781,9 @@
       "slug": "paycell-bakiyesini-kismi-bozdurmanin-avantajlari",
       "title": "Paycell Bakiyesini Kısmi Bozdurmanın Avantajları",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-16",
+      "published_at": "2026-10-16T20:05:41Z"
     },
     {
       "slug": "paycell-bozdururken-sik-yapilan-hatalar",
