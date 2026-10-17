@@ -789,7 +789,9 @@
       "slug": "paycell-bozdururken-sik-yapilan-hatalar",
       "title": "Paycell Bakiyesi Bozdururken Sık Yapılan Hatalar",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-17",
+      "published_at": "2026-10-17T20:11:50Z"
     },
     {
       "slug": "paycell-mi-mobil-odeme-mi-hangisini-secmeli",
