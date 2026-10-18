@@ -797,7 +797,9 @@
       "slug": "paycell-mi-mobil-odeme-mi-hangisini-secmeli",
       "title": "Paycell mi Mobil Ödeme mi? Hangisini Seçmeliyim?",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-18",
+      "published_at": "2026-10-18T17:16:14Z"
     },
     {
       "slug": "paycell-cuzdanima-nasil-bakiye-yuklerim",
