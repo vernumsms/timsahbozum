@@ -813,7 +813,9 @@
       "slug": "paycell-kart-bakiyesi-ile-cuzdan-bakiyesi-ayni-mi",
       "title": "Paycell Kart Bakiyesi ile Cüzdan Bakiyesi Aynı mı?",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-20",
+      "published_at": "2026-10-20T11:11:49Z"
     },
     {
       "slug": "paycell-bakiyemi-nereden-gorebilirim",
