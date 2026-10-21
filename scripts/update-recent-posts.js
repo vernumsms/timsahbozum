@@ -75,3 +75,6 @@ if (changed) {
 } else {
   console.log("index.html zaten güncel.");
 }
+
+// Hizmet sayfalarindaki "Yeni eklenen rehberler" blogunu da ayni adimda guncelle (rutin bu scripti zaten calistiriyor).
+require("child_process").execFileSync(process.execPath, [require("path").join(__dirname, "update-service-guides.js")], { stdio: "inherit" });
