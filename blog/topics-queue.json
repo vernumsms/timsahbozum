@@ -829,7 +829,9 @@
       "slug": "paycell-bozdurma-islemi-kac-adimda-tamamlanir",
       "title": "Paycell Bozdurma İşlemi Kaç Adımda Tamamlanır?",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-24",
+      "published_at": "2026-10-24T20:11:15Z"
     },
     {
       "slug": "paycell-bakiyesi-ile-online-alisveris-yapilir-mi",
