@@ -837,7 +837,9 @@
       "slug": "paycell-bakiyesi-ile-online-alisveris-yapilir-mi",
       "title": "Paycell Bakiyesi ile Online Alışveriş Yapılır mı?",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-26",
+      "published_at": "2026-10-26T20:12:00Z"
     },
     {
       "slug": "paycell-hesabim-pasifse-bakiyemi-bozdurabilir-miyim",
