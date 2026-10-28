@@ -845,7 +845,9 @@
       "slug": "paycell-hesabim-pasifse-bakiyemi-bozdurabilir-miyim",
       "title": "Paycell Hesabım Pasifse Bakiyemi Bozdurabilir miyim?",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-28",
+      "published_at": "2026-10-28T11:21:32Z"
     },
     {
       "slug": "paycell-bakiyesi-bozdururken-hangi-bilgiler-istenir",
