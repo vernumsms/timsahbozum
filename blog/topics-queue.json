@@ -853,7 +853,9 @@
       "slug": "paycell-bakiyesi-bozdururken-hangi-bilgiler-istenir",
       "title": "Paycell Bakiyesi Bozdururken Hangi Bilgiler İstenir?",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-10-30",
+      "published_at": "2026-10-30T08:14:19Z"
     },
     {
       "slug": "paycell-kart-mi-cuzdan-mi-hangisi-avantajli",
