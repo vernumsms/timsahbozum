@@ -861,7 +861,9 @@
       "slug": "paycell-kart-mi-cuzdan-mi-hangisi-avantajli",
       "title": "Paycell Kart mı Cüzdan mı, Hangisi Daha Avantajlı?",
       "service": "paycell",
-      "published": false
+      "published": true,
+      "published_date": "2026-11-01",
+      "published_at": "2026-11-01T20:11:12Z"
     },
     {
       "slug": "razer-gold-kodu-bolgeye-ozel-mi",
