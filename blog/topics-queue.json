@@ -869,7 +869,9 @@
       "slug": "razer-gold-kodu-bolgeye-ozel-mi",
       "title": "Razer Gold Kodu Bölgeye Özel mi? Bilmen Gerekenler",
       "service": "razer-gold",
-      "published": false
+      "published": true,
+      "published_date": "2026-11-03",
+      "published_at": "2026-11-03T20:15:24Z"
     },
     {
       "slug": "razer-gold-hediye-karti-geldi-ne-yapmaliyim",
