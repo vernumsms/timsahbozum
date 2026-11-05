@@ -877,7 +877,9 @@
       "slug": "razer-gold-hediye-karti-geldi-ne-yapmaliyim",
       "title": "Razer Gold Hediye Kartı Geldi, Ne Yapmalıyım?",
       "service": "razer-gold",
-      "published": false
+      "published": true,
+      "published_date": "2026-11-05",
+      "published_at": "2026-11-05T14:16:28Z"
     },
     {
       "slug": "razer-gold-kodu-bozdurmadan-once-bilmen-gerekenler",
