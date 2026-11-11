@@ -901,7 +901,9 @@
       "slug": "razer-gold-kod-bozdurma-ile-kod-satisi-farki",
       "title": "Razer Gold Kod Bozdurma ile Kod Satışı Arasındaki Fark",
       "service": "razer-gold",
-      "published": false
+      "published": true,
+      "published_date": "2026-11-11",
+      "published_at": "2026-11-11T20:15:00Z"
     },
     {
       "slug": "birden-fazla-razer-gold-kodu-tek-seferde",
