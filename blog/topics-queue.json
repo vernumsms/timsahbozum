@@ -925,7 +925,9 @@
       "slug": "razer-gold-kodu-ne-zaman-kullanilmali-suresi-dolar-mi",
       "title": "Razer Gold Kodu Ne Zaman Kullanılmalı, Süresi Dolar mı?",
       "service": "razer-gold",
-      "published": false
+      "published": true,
+      "published_date": "2026-11-17",
+      "published_at": "2026-11-17T20:14:28Z"
     },
     {
       "slug": "razer-gold-kodunu-kaybedersem-ne-olur",
