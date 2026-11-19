@@ -933,7 +933,9 @@
       "slug": "razer-gold-kodunu-kaybedersem-ne-olur",
       "title": "Razer Gold Kodunu Kaybedersem Ne Olur?",
       "service": "razer-gold",
-      "published": false
+      "published": true,
+      "published_date": "2026-11-19",
+      "published_at": "2026-11-19T05:15:02Z"
     },
     {
       "slug": "razer-gold-kodu-ekran-goruntusuyle-mi-yaziyla-mi-paylasilmali",
